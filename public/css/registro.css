@@ -1,0 +1,89 @@
+.titular__registrese {
+    color: #666;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 0 6px 18px;
+}
+
+.contenedorElementosForm {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 12px 0 6px 18px; 
+}
+
+.contenedorLabel {
+    width: 200px;
+}
+
+.texto__general {
+    font-size: 14px;
+}
+
+.texto__input {
+    border: solid 1px #555;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 180px;
+    line-height: 24px;
+    padding-left: 6px;
+    color: #333;
+}
+
+.texto__date {
+    border: solid 1px #555;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 120px;
+    line-height: 24px;
+    padding-left: 6px;
+}
+
+.texto__radioYcheckbox {
+    font-size: 15px;
+    color: #222
+}
+
+.form__button {
+    background: #1259c3;
+    color: #fff;
+    border-radius: 6px;
+    height: 32px;
+    width: 75px;
+}
+
+.form__button-login {
+    background: #1259c3;
+    color: #fff;
+    border-radius: 6px;
+    height: 32px;
+    width: 300px;
+
+}
+
+.form__button-login:hover {
+    background: #041630;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+.form__button:hover {
+    background: #041630;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+.form__margenInferior {
+    padding-bottom: 24px;
+}
+
+
+
+
+@media (min-width: 400px) {
+    .texto__input {
+        width: 300px;
+    }
+     
+}

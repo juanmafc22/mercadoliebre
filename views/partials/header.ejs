@@ -1,0 +1,63 @@
+<header>
+    <!-- Div general para las 3 sections.
+    1ra sect. header superior con sus tres elementos: logo, barra búsqueda y texto
+    2da sect. barra de nav grande, se ve solo en pantallas grandes.
+    3er sect. hamb menu, solo se ve en las dos resoluciones chicas.
+    -->
+
+    <!-- comentario agregado -->
+            
+    
+        <!-- 1ra sect. logo, barra búsqueda y texto  -->
+        <section class="header__cajaSuperior" >
+            <div class="header__cajaSuperior__logo">
+                <a href="/home"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="header__ancho-logo"></a>
+            </div>
+           
+            <div class="header__cajaSuperior__busqueda">
+                <form class="form-grow" action="/">
+                    <input type="text" placeholder="Buscar productos, marcas..." class="header__cajaSuperior__busqueda--input">
+                </form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+                              
+            
+            
+            <div class="header__cajaSuperior__texto">
+                <p><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        
+        <!-- 2da sect. barra de nav grande, se ve solo en pantallas grandes.  -->
+        <section class="header__barraNavGrande">
+            
+            <!-- parte barra nav izquierda -->
+            <div >
+                <ul class="header__barraNavegacion">
+                    <li> <a href="/home">Home</a>  </li>
+                    <li> <a href="#">Ofertas</a>  </li>
+                    <li> <a href="#">Tiendas Oficiales</a>  </li>
+                    <li> <a href="#">Vender</a>  </li>
+                    <li> <a href="#">Ayuda</a>  </li>
+                </ul>
+            </div>
+            <!-- parte barra nav derecha -->
+            <div>
+                <ul class="header__barraNavegacion">
+                    <li> <a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                    <li> <a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li> <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </div>
+            
+        </section>
+        
+        <!-- 3er sect. hamb menu, solo se ve en las dos resoluciones chicas. -->
+        <section class="header__hamburgerMenu">
+            <nav class="bigMacContainer">
+                <i class="fas fa-bars bigMacContainer__BigMac" aria-hidden="true"></i>
+            </nav>
+        </section>
+
+    </div>
+</header>

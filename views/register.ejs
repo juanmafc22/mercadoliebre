@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Mercado Liebre</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <%- include("./partials/header") %> 
+    
+
+
+
+
+          
+    <!-- Aquí va el formulario de registro -->
+    <main>
+        <h3 class="titular__registrese">Regístrese.</h3>
+
+        <!-- Inicio de los elementos del form -->
+        <form action="/home" method="post" class="form__margenInferior">
+       
+            <div class="contenedorElementosForm" id="nombre">
+                <div class="contenedorLabel">
+                    <label for="nombreApellido" class="texto__general">Su nombre y apellido</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="text" name="nombreApellido" placeholder="Nombre y apellido">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="usuario">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="usuario" >Su usuario</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="text" name="usuario" placeholder="Nombre de usuario">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="email">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="email" >Su e-mail</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="email" name="email" placeholder="@ email">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="fechaNacimiento">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="fechaNacimiento" >Su fecha de nacimiento</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="date" name="fechaNacimiento">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="domicilio">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="domicilio" >Su domicilio</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="text" name="domicilio" placeholder="Domicilio">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="perfilUsuario">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="perfilUsuario" >Su perfil de usuario: comprador o vendedor</label>
+                </div>
+                <div class="texto__radioYcheckbox">
+                    <input type="radio" name="perfilUsuario" value="comprador"> Comprador <br>          
+                    <input type="radio" name="perfilUsuario" value="vendedor"> Vendedor        
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="intereses">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="intereses" >Sus intereses</label>
+                </div>
+                <div class="texto__radioYcheckbox">
+                    <input type="checkbox" name="intereses" value="electro"> Electro <br>        
+                    <input type="checkbox" name="intereses" value="moda"> Moda <br>        
+                    <input type="checkbox" name="intereses" value="hogar"> Hogar <br>        
+                    <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria <br>        
+                    <input type="checkbox" name="intereses" value="vidaSana"> Vida Sana <br>        
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="fotoPerfil">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="fotoPerfil" >Suba su foto de perfil</label>
+                </div>
+                <div>
+                    <input type="file" name="fotoPerfil" accept=".jpg, .jpeg, .png">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="password">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="password" >Su contraseña</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="password" name="password" placeholder="Contraseña">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm" id="password2">
+                <div class="contenedorLabel">
+                    <label class="texto__general" for="password2" >Confirme su contraseña</label>
+                </div>
+                <div>
+                    <input class="texto__input" type="password" name="password2" placeholder="Confirme su contraseña">
+                </div>
+            </div>
+            
+            <div class="contenedorElementosForm">
+                <div class="contenedorLabel" >
+                    <label class="texto__general" ></label>
+                </div>
+                <div>
+                    <button class="form__button" type="submit">Enviar</button> <button class="form__button" type="reset">Borrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <%- include("./partials/footer") %>
+    
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+/* 
+Estilos generales
+
+-- Paleta de colores
+Amarillo:       #EAC926;
+Azul:           #03264C;
+Celeste:        #1259c3;
+Gris oscuro:    #666;
+Gris claro:     #ebebeb;
+Verde:          #39b54a;
+
+-- Tipografías
+Familia: 'Roboto'
+
+-- Tamaños Tipográficos
+Cuerpos de texto:   12px
+Titulares:          24px (Basado en tu última visita/Ofertas)
+Precios:            18px
+Descuentos:         16px
+Descripciones:      16px
+*/
+
+/* Comentario agregado */
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 16px;
+}
+
+
+.header__cajaSuperior {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.header__cajaSuperior__logo {
+    margin-right: auto;
+    width: 45%;
+}
+
+.header__ancho-logo {
+    max-width: 232px;
+}
+
+.header__cajaSuperior__busqueda {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.header__cajaSuperior__texto {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+}
+
+.header__cajaSuperior__busqueda--input {
+    border: solid 1px #999;
+    border-radius: 6px;
+    color: #000000;
+    font-size: 16px;
+    height: 32px;
+    padding-left: 6px;
+    width: 100%
+} 
+
+.form-grow {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header__barraNavGrande {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__barraNavegacion {
+    display: none;
+    list-style: none;
+    gap: 12px;
+}
+
+.header__hamburgerMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.bigMacContainer {
+    background-color: #1259c3;
+    color: #ebebeb;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bigMacContainer__BigMac {
+    font-size: 24px;
+    padding: 6px;
+}
+
+main {
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.main__contenedorBanner {
+    width: 100%;
+}
+
+.main__contenedorBanner > img {
+    max-width: 100%;
+}
+
+
+/* elemento responsive que se adapta en los media queries */
+.main__sectionUltimaVisita {
+    padding: 16px;
+}
+
+.main__sectionOfertas {
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.main__article{
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 8px;
+    /* box-shadow: 0px 0px 8px #555;  */
+    margin-bottom: 24px;
+}
+
+.main__article:hover {
+    box-shadow: 0px 0px 8px #555; 
+    transform: scale(1.05);
+}
+
+.main__articleImg {
+    width: 100%;
+    border: #03264C;
+}
+
+.main__articleImgBottomBorder {
+    border-bottom: solid 1px #ddd;
+}
+
+.main__articleTextosDisplayFlex {
+    align-items: baseline;
+    display: flex;
+    gap: 8px;
+    margin: 12px 0px 12px 12px;
+    position: relative;
+}
+
+.main__article:hover > .main__articleTextosDisplayFlex > i {
+    transform: rotate(-90deg);
+}
+
+.main__articleTextoPrecio {
+    font-size: 18px;
+}
+
+.main__articleTextoDescuento {
+    font-size: 14px;
+    color: #39b54a;
+}
+
+
+.main__articleTextoTitular {
+    font-weight: 500;
+    color: #666;
+    margin: 12px 0px 12px 12px;
+}
+
+.main__articleTextoTit {
+    font-weight: normal; 
+    opacity: 0.5;
+    
+}
+
+.main__article:hover > .main__articleTextoTit {
+    font-weight: bold; 
+    opacity: 1;
+}
+
+
+.main__titulares {
+    font-size: 22px;
+    font-weight: 600;
+    color: #444;
+    margin: 18px 0 6px 18px;
+}
+
+.main__fa-truck {
+    font-size: 12px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: 21px;
+}
+
+
+
+footer {
+    background-color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer__section {
+    color: #000;
+}
+
+.footer__section:hover .footer__iconos-style {
+    color: #03264C;
+}
+
+
+.footer__iconos {
+    display: flex;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.footer__iconos-style {
+    display: block;
+    color: #6e8ebe;
+    font-size: 24px;
+    margin: auto;   
+}
+
+.footer__titulares {
+    color: #666;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.footer__textos {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.footer__textoFinal {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer__block-a-flex {
+    display: block;
+}
+
+
+
+@media (min-width: 360px) {
+    
+    .header__cajaSuperior__logo {
+        width: 45%;
+    }
+
+    .header__cajaSuperior__busqueda {
+        width: 45%;
+    }
+    
+    .header__barraNavegacion {
+        display: none;
+        list-style: none;
+        gap: 12px;
+    }
+
+    .main__sectionUltimaVisita {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 8px;
+        gap: 9px;
+    }
+
+    .main__article{
+        width: 47%;
+        background-color: #ffffff;
+        padding: 6px;
+        border-radius: 8px;
+        /* box-shadow: 0px 0px 8px #555; */
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .header__cajaSuperior__logo {
+        width: 33%;
+    }
+
+    .header__cajaSuperior__busqueda {
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__cajaSuperior__texto {
+        width: 33%;    
+        text-align: right;
+    }
+
+    /* 
+    .header__cajaSuperior__busqueda--input {
+        border: solid 1px #999;
+        border-radius: 6px;
+        color: #000000;
+        font-size: 16px;
+        height: 32px;
+        padding-left: 6px;
+        width: 100%
+    }
+     */
+
+     
+   
+    .header__barraNavegacion {
+        display: flex;
+        list-style: none;
+        gap: 12px;
+    }
+    
+    /* Decoración links para las barras de nav del header */
+    .header__barraNavegacion > li > a, a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+    .header__barraNavegacion > li > a:hover {
+        text-decoration: underline;
+        color: #000;
+        text-underline-offset: 5px;
+    }
+
+    .header__hamburgerMenu {
+        display: none;
+    }
+
+    .header__cajaSuperior {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .main__sectionUltimaVisita {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 8px;
+        gap: 12px;
+    
+    }
+
+    .main__article{
+        width: 22%;
+        background-color: #ffffff;
+        padding: 6px;
+        border-radius: 8px;
+        /* box-shadow: 0px 0px 8px #555; */
+        margin-bottom: 24px;
+    }
+
+    .footer__block-a-flex {
+        display: flex;
+    }
+
+    
+}
