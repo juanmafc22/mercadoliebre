@@ -1,7 +1,9 @@
 # MERCADO LIEBRE
 
-Proyecto integrador individual
+### Proyecto integrador individual
 
-DIGITAL HOUSE TN 09 - AÑO 2022
+### Full Stack Node a distancia TN 41
 
-Alumno: Juan Manuel Fernández
+- Alumno: Juan Manuel Fernández Casenave
+- 5 de octubre de 2022
+- Profesor: Leandro Musso
