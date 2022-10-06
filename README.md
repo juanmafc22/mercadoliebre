@@ -5,5 +5,12 @@
 ### Full Stack Node a distancia TN 41
 
 - Alumno: Juan Manuel Fernández Casenave
-- 5 de octubre de 2022
 - Profesor: Leandro Musso
+
+### Implementación del patrón de diseño MVC
+
+A partir del 6 de octubre de 2022 se sigue con el desarrollo del sitio de Mercado Libre implementado el patrón de diseño MVC.
+
+### Versión online del sitio
+
+La versión de producción del sitio se encuentra en: https://mercadodelasliebres.herokuapp.com/
