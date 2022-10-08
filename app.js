@@ -12,41 +12,32 @@ app.listen(process.env.PORT || puertoExpress, () => {
     console.log(`Express iniciado OK el el puerto ${puertoExpress}`);
 });
 
-
 // ******************** requires
 //
 const path = require("path");
 const publicPath = path.resolve(__dirname, "./public");
+const mainRouter = require("./routes/main.router");
 
 // ******************** middlewares (app.use)
 //
 app.use(express.static(publicPath));
+app.use(express.urlencoded({ extended:false } ));
+app.use(express.json());
+
 
 // ******************** template engines (app.set, carpeta views)
 //
 app.set("view engine", "ejs");
 
+
 // ******************** required route system
 //
+app.use("/", mainRouter);
 
 
 
 
-app.get("/", (req, res) => {
-    res.render("index");
-});
 
-app.get("/", (req, res) => {
-    res.render("index");
-});
-
-app.get("/index", (req, res) => {
-    res.render("index");
-});
-
-app.post("/index", (req, res) => {
-    res.render("index")
-});
 
 app.get("/register", (req, res) => {
     res.render("register");
