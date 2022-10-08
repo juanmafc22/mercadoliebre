@@ -22,14 +22,21 @@
 }
 
 .texto__input {
-    border: solid 1px #555;
+    border: solid 1px #999;
     border-radius: 3px;
     font-size: 14px;
     width: 180px;
-    line-height: 24px;
+    line-height: 31px;
     padding-left: 6px;
-    color: #333;
+    color: #111;
 }
+
+.texto__input:focus {
+    border: solid 1px;
+    outline: 0;
+    border-color: #333;
+}
+
 
 .texto__date {
     border: solid 1px #555;
@@ -54,15 +61,17 @@
 }
 
 .form__button-login {
+    border: solid 1px #1259c3;
     background: #1259c3;
     color: #fff;
     border-radius: 6px;
-    height: 32px;
+    height: 37px;
     width: 300px;
 
 }
 
 .form__button-login:hover {
+    border: solid 1px #041630;
     background: #041630;
     transition-property: background-color;
     transition-duration: 0.75s;
@@ -74,8 +83,25 @@
     transition-duration: 0.75s;
 }
 
-.form__margenInferior {
+.form-control {
     padding-bottom: 24px;
+}
+
+.texto__input.exito {
+    border: solid 2px;
+    border-color: #228b4e ;
+}
+
+.texto__input.error {
+    border: solid 2px;
+    border-color: #e74c3c;
+}
+
+small {
+    color: #e74c3c;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
 }
 
 

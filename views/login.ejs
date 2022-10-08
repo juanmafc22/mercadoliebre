@@ -9,7 +9,7 @@
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/forms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         <h3 class="titular__registrese">Ingrese su usuario y contraseña</h3>
 
         <!-- Inicio de los elementos del form -->
-        <form action="/index" method="post" class="form__margenInferior">
+        <form id="form" action="/index" method="post" class="form-control">
        
             <div class="contenedorElementosForm" id="usuario">
                 <div class="contenedorLabel">
@@ -34,6 +34,7 @@
                 </div>
                 <div>
                     <input class="texto__input" type="text" name="usuario" placeholder="Nombre de usuario">
+                    <small>Error en el nombre</small>
                 </div>
             </div>
             
@@ -43,6 +44,9 @@
                 </div>
                 <div>
                     <input class="texto__input" type="password" name="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <small>Error en la contraseña</small>
                 </div>
             </div>
             
