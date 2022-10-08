@@ -12,11 +12,14 @@ app.listen(process.env.PORT || puertoExpress, () => {
     console.log(`Express iniciado OK el el puerto ${puertoExpress}`);
 });
 
+
 // ******************** requires
 //
 const path = require("path");
 const publicPath = path.resolve(__dirname, "./public");
 const mainRouter = require("./routes/main.router");
+const usersRouter = require("./routes/users.router");
+
 
 // ******************** middlewares (app.use)
 //
@@ -34,16 +37,5 @@ app.set("view engine", "ejs");
 //
 app.use("/", mainRouter);
 
-
-
-
-
-
-app.get("/register", (req, res) => {
-    res.render("register");
-});
-
-app.get("/login", (req, res) => {
-    res.render("login");
-});
+app.use("/users", usersRouter);
 
