@@ -41,17 +41,19 @@
 }
 
 .form-control.success input {
-    border-color: #29b362;
+    border-color: #118a43;
+    border: 2px solid #118a43;
 }
 
 .form-control.error input {
     border-color: #db3422;
+    border: 2px solid #db3422;
 }
 
 .form-control small {
     font-size: 12px;
     font-weight: bold;
-    padding: 5px 0 13px 10px;
+    padding: 5px 0 3px 10px;
     color: #db3422;
     visibility: hidden;
 }
