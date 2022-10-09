@@ -25,43 +25,34 @@
     <main>
         <h3 class="titular__registrese">Ingrese su usuario y contraseña</h3>
 
-        <!-- Inicio de los elementos del form -->
-        <form id="form" action="/index" method="post" class="form-control">
-       
-            <div class="contenedorElementosForm" id="usuario">
-                <div class="contenedorLabel">
-                    <label class="texto__general" for="usuario" >Su usuario</label>
+        <div class="container">
+
+            <form id="form" class="form">
+
+                <div class="form-control">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" id="username" placeholder="Ingrese su usuario">
+                    <small>Error en el nombre de usuario</small>
                 </div>
-                <div>
-                    <input class="texto__input" type="text" name="usuario" placeholder="Nombre de usuario">
-                    <small>Error en el nombre</small>
-                </div>
-            </div>
-            
-            <div class="contenedorElementosForm" id="password">
-                <div class="contenedorLabel">
-                    <label class="texto__general" for="password" >Su contraseña</label>
-                </div>
-                <div>
-                    <input class="texto__input" type="password" name="password" placeholder="Contraseña">
+                <div class="form-control">
+                    <label for="password">Contraseña</label>
+                    <input type="text" id="password" placeholder="Ingrese su contraseña">
                     <small>Error en la contraseña</small>
                 </div>
-            </div>
-            
-            <div class="contenedorElementosForm">
-                <div class="contenedorLabel" >
-                    <label class="texto__general" ></label>
-                </div>
-                <div>
-                    <button class="form__button-login" type="submit">Login</button>
-                </div>
-            </div>
 
-        </form>
+            </form>
+            <button type="submit">Ingresar</button>
+
+
+        </div>
+
+        
     </main>
 
     <%- include("./partials/footer") %>
 
+    <!-- link al archivo para la validacion del formulario-->
+    <script src="/js/form-validator.js"></script>
     </body>
 </html>
 
