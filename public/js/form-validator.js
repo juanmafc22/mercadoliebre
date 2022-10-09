@@ -28,4 +28,13 @@ form.addEventListener('submit', function(event) {
     else {
         showSuccess(username);
     }
+
+    if (password.value === '') {
+        showError(password, 'Debe ingresar su contraseña')
+    } else if (password.value.length > 0 && password.value.length < 8) {
+        showError(password, 'La contraseña debe tener por lo menos 8 caracteres')
+    }
+    else {
+        showSuccess(password);
+    }
 })
