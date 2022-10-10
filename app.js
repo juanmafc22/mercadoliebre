@@ -10,6 +10,7 @@ const puertoExpress = 3030;
 //
 app.listen(process.env.PORT || puertoExpress, () => {
     console.log(`Express iniciado OK el el puerto ${puertoExpress}`);
+    console.log("Ir al sitio Web: http://localhost:" + puertoExpress + "/");
 });
 
 

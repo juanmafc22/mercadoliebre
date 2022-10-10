@@ -2,8 +2,10 @@ const form = document.getElementById("form");
 const fullname = document.getElementById("fullname");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
-const typeOfUser = document.getElementById("typeOfUser");
+const birthday = document.getElementById("birthday");
+const foto = document.getElementById("profilePic");
 const password = document.getElementById("password");
+const password2 = document.getElementById("password2");
 
 
 // Show error messages
@@ -31,16 +33,16 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     if (fullname.value === "") {
-        showError(fullname, "Se requiere su nombre completo");
+        showError(fullname, "Ingrese su nombre completo");
     } else if (fullname.value.length > 0 && fullname.value.length < 5) {
-        showError(fullname, `No sea tramposo, de verdad su nombre completo solo tiene ${fullname.value.length} caracteres?`);
+        showError(fullname, `De verdad su nombre completo solo tiene ${fullname.value.length} caracteres?`);
     } else {
         showSuccess(fullname);
     }
 
     
     if (username.value === "") {
-        showError(username, "Se requiere nombre de usuario")
+        showError(username, "Ingrese su nombre de usuario")
     } else if (username.value.length > 0 && username.value.length < 8) {
         showError(username, "El nombre de usuario debe tener por lo menos 8 caracteres")
     } else {
@@ -49,26 +51,39 @@ form.addEventListener("submit", function(event) {
     
 
     if (email.value === "") {
-        showError(email, "Se requiere una dirección de email")
+        showError(email, "Ingrese una dirección de email")
     } else if (!isValidEmail(email.value)) {
         showError(email, "La dirección de email no es válida")
     } else {
         showSuccess(email);
     }
 
-    if (birthdate.value === "") {
-        showError(birthdate, "Se requiere una fecha de nacimiento");
+    if (birthday.value === "") {
+        showError(birthday, "Ingrese su fecha de nacimiento");
     } else {
-        showSuccess(birthdate);
+        showSuccess(birthday);
     }
 
+    if (profilePic.value === "") {
+        showError(profilePic, "Suba una foto perfil en formato .jpg, .jpeg o .png");
+    } else {
+        showSuccess(profilePic);
+    }
 
     if (password.value === "") {
-        showError(password, "Debe ingresar su contraseña")
+        showError(password, "Ingrese una contraseña")
     } else if (password.value.length > 0 && password.value.length < 8) {
         showError(password, "La contraseña debe tener por lo menos 8 caracteres")
     } else {
         showSuccess(password);
+    }
+
+    if (password2.value === "") {
+        showError(password2, "Repita la misma contraseña")
+    } else if (password.value != password2.value) {
+        showError(password2, "Las contraseñas no coinciden")
+    } else {
+        showSuccess(password2);
     }
     
 });

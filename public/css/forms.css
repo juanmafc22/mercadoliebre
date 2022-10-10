@@ -22,30 +22,36 @@
 }
 
 .form-control label {
-    margin-bottom: 7px;
+    margin-bottom: 3px;
     font-size: 14px;
     color: #111;
 }
 
-.form-control input {
-    border: 1px solid #888;
+.bgColorFFF {
+    background-color: #fff;
+}
+
+
+.form-control input, select {
+    border: 1px solid #999;
     border-radius: 4px;
     padding: 5px 10px 5px 10px;
     font-size: 13px;
-    width: 300px;
+    background-color: #fff;
+    width: 280px;
 }
 
 .form-control input:focus {
     outline: 0;
-    border-color: #333;
+    border-color: #111;
 }
 
-.form-control.success input {
+.form-control.success input, select {
     border-color: #118a43;
     border: 2px solid #118a43;
 }
 
-.form-control.error input {
+.form-control.error input, select {
     border-color: #db3422;
     border: 2px solid #db3422;
 }
@@ -53,7 +59,7 @@
 .form-control small {
     font-size: 12px;
     font-weight: bold;
-    padding: 5px 0 3px 10px;
+    padding: 3px 0 3px 13px;
     color: #db3422;
     visibility: hidden;
 }
@@ -64,12 +70,13 @@
 
 .form button {
     cursor: pointer;
-    width: 100%;
+    width: 45%;
     border: solid 1px #1259c3;
     background: #1259c3;
     color: #fff;
     border-radius: 6px;
     height: 33px;
+    gap: 10px;
 }
 
 .form button:hover {
@@ -79,9 +86,16 @@
     transition-duration: 0.75s;
 }
 
-@media (min-width: 450px) {
+.submit-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+@media (min-width: 500px) {
     .form-control input {
-        width: 400px;
+        width: 430px;
     }
 }
     
