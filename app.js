@@ -40,3 +40,8 @@ app.use("/", mainRouter);
 
 app.use("/users", usersRouter);
 
+
+// Seteo inicial de error 404
+app.use((req, res, next) => {
+    res.status(404).render("index");
+})
