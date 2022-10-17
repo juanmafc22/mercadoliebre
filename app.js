@@ -2,7 +2,7 @@
 //
 const express = require("express");
 const app = express();
-const puertoExpress = 3030;
+const puertoExpress = 3000;
 // const { redirect } = require("express/lib/response");
 
 
@@ -20,6 +20,7 @@ const path = require("path");
 const publicPath = path.resolve(__dirname, "./public");
 const mainRouter = require("./routes/main.router");
 const usersRouter = require("./routes/users.router");
+const pruebasRouter = require("./routes/pruebas.router");
 
 
 // ******************** middlewares (app.use)
@@ -40,8 +41,10 @@ app.use("/", mainRouter);
 
 app.use("/users", usersRouter);
 
+app.use("/pruebas", pruebasRouter);
+
 
 // Seteo inicial de error 404
 app.use((req, res, next) => {
-    res.status(404).render("index");
-})
+    res.status(404).send("Page not found");
+});
