@@ -8,7 +8,7 @@ const usersController = {
 
     register: (req, res) => {
         res.render("register");
-    }
+    },
 
 };
 
