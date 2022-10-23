@@ -9,14 +9,13 @@ const publicPath = path.resolve(__dirname, "./public");
 
 // ------- | express () 
 const app = express();
-const puertoExpress = 3000;
-// const { redirect } = require("express/lib/response");
+const port = process.env.PORT || 3001;
 
 
 // ------- | server start
-app.listen(process.env.PORT || puertoExpress, () => {
-    console.log(`Express iniciado OK el el puerto ${puertoExpress}`);
-    console.log("Ir al sitio Web: http://localhost:" + puertoExpress + "/");
+app.listen(port, () => {
+    console.log(`Express iniciado OK el el puerto ${port}`);
+    console.log("Ir al sitio Web: http://localhost:" + port + "/");
 });
 
 
