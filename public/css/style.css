@@ -171,7 +171,9 @@ main {
 }
 
 .main__article:hover > .main__articleTextosDisplayFlex > i {
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
+    right: 0px;
+
 }
 
 .main__articleTextoPrecio {
@@ -216,8 +218,10 @@ main {
     padding: 6px;
     border-radius: 50%;
     position: absolute;
-    right: 5px;
-    bottom: 21px;
+    right: 32px;
+    bottom: 27px;
+    transition-property: right;
+    transition-duration: 2s;
 }
 
 
