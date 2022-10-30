@@ -16,16 +16,30 @@ const productsController = {
     categorias: (req, res) => {
 
         let categorias = [];
-         
-        products.forEach (product => {
+        
+        products.forEach ( product => {
         
             if (!categorias.includes(product.categoria)) {
                 categorias.push(product.categoria);
             }
         });
-        
 
-        res.render("productos/categorias", {categorias});
+        res.render("productos/categorias", {products, categorias});
+    },
+
+    categoriasList: (req, res) => {
+
+        const categoria = req.params.categoria;
+
+        const filteredProds = products.filter (product => {
+
+            if (product.categoria == categoria) {
+                return product;
+            }
+        });
+
+        res.render("productos/categorias-list", {filteredProds});
+
     }
 
 }

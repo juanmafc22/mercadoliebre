@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los productoso en oferta</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <%- include("../partials/header") %> 
+          
+    <main>
+
+        <!-- Sección "ofertas" -->
+        <section>
+
+            <h3 class="main__titulares">Todos los productos de <%= filteredProds[0].categoria %> </h3>
+                
+                <div class="main__sectionUltimaVisita">
+
+                        <% filteredProds.forEach(product => { %>
+
+                            <article class="main__article">
+                                <div class="main__articleImgBottomBorder" >
+                                    <img class="main__articleImg" src="/images/<%= product.imagen %> " alt="<%= product.titulo %> ">
+                                </div>
+                                <div class="main__articleTextosDisplayFlex">
+                                    <p class="main__articleTextoPrecio">$<%= product.precio %></p>
+                                    <p class="main__articleTextoDescuento"><%= product.precio %>% descuento</p>
+                                    <i class="fa-solid fa-truck main__fa-truck"></i>
+                                </div>
+                                <div class="main__articleTextoTit">
+                                    <p class="main__articleTextoTitular"> <%= product.titulo%></p>
+                                </div>
+                            </article>
+
+                        <% }) %>
+                    
+                        
+                </div>    
+        </section>
+    </main>
+
+    <%- include("../partials/footer") %>
+    
+    
+</body>
+</html>

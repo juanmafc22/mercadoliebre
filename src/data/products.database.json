@@ -2,6 +2,7 @@
     {
         "id": 1667066761091,
         "categoria": "Bicicletas",
+        "categoriaId": 1,
         "titulo": "Bicicleta Nordic",
         "precio": 19900,
         "descuento": 0,
@@ -12,6 +13,7 @@
     {
         "id": 1667066773612,
         "categoria": "Bicicletas",
+        "categoriaId": 1,
         "titulo": "Bicicleta Infantil con rueditas",
         "precio": 45000,
         "descuento": 5,
@@ -22,6 +24,7 @@
     {
         "id": 1667066810371,
         "categoria": "Bicicletas",
+        "categoriaId": 1,
         "titulo": "Bicicleta Plegable",
         "precio": 120500,
         "descuento": 10,
@@ -32,7 +35,8 @@
     },
     {
         "id": 1667066821370,
-        "categoria": "Telefonos Celulares",
+        "categoria": "Celulares",
+        "categoriaId": 2,
         "titulo": "iPhone 14",
         "precio": 345800,
         "descuento": 0,
@@ -42,7 +46,8 @@
     },
     {
         "id": 1667066832992,
-        "categoria": "Telefonos Celulares",
+        "categoria": "Celulares",
+        "categoriaId": 2,
         "titulo": "Xiaomi Mi Max 3",
         "precio": 112000,
         "descuento": 15,
@@ -52,7 +57,8 @@
     },
     {
         "id": 1667066843091,
-        "categoria": "Telefonos Celulares",
+        "categoria": "Celulares",
+        "categoriaId": 2,
         "titulo": "Samsung A3",
         "precio": 39000,
         "descuento": 17,
@@ -62,7 +68,8 @@
     },
     {
         "id": 1667066853487,
-        "categoria": "Tecnología",
+        "categoria": "Computadoras",
+        "categoriaId": 3,
         "titulo": "Mac Book Air Pro Tablet",
         "precio": 340000,
         "descuento": 10,
@@ -72,7 +79,8 @@
     },
     {
         "id": 1667066868456,
-        "categoria": "Tecnología",
+        "categoria": "Computadoras",
+        "categoriaId": 3,
         "titulo": "PC Hub Max SRX",
         "precio": 234000,
         "descuento": 0,
@@ -82,7 +90,8 @@
     },
     {
         "id": 1667066878695,
-        "categoria": "Tecnología",
+        "categoria": "Computadoras",
+        "categoriaId": 3,
         "titulo": "Lenovo X3R442",
         "precio": 290000,
         "descuento": 0,
@@ -93,6 +102,7 @@
     {
         "id": 1667066890917,
         "categoria": "Herramientas",
+        "categoriaId": 4,
         "titulo": "Motosierra Circular Skil",
         "precio": 99000,
         "descuento": 0,
@@ -104,6 +114,7 @@
     {
         "id": 1667066900708,
         "categoria": "Herramientas",
+        "categoriaId": 4,
         "titulo": "Moladora Bosch Pro 44",
         "precio": 199000,
         "descuento": 9,
@@ -114,6 +125,7 @@
     {
         "id": 1667066912468,
         "categoria": "Herramientas",
+        "categoriaId": 4,
         "titulo": "Sierra Lineal",
         "precio": 12000,
         "descuento": 34,

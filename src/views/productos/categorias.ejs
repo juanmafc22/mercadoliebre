@@ -30,14 +30,11 @@
             <h3 class="main__titulares">Las 4 categorias de los productos en venta</h3>
             
             <div class="main__texto-categorias">
-                <% if(categorias) { %>
 
                     <% categorias.forEach( categoria => { %>
-                        <a href=""><p class="main__parrafos"><%= categoria %></p></a>
+                        <a href="/productos/categorias/<%= categoria %>"><p class="main__parrafos"><%= categoria %></p></a>
                     <% }) %> 
 
-
-                <% } %>
             </div> 
         </section>
     </main>
