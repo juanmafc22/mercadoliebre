@@ -4,7 +4,7 @@ const express = require("express");
 const mainRouter = require("./routes/main.router");
 const usersRouter = require("./routes/users.router");
 const path = require("path");
-const publicPath = path.resolve(__dirname, "./public");
+const publicPath = path.resolve(__dirname, "../public");
 
 
 // ------- | express () 
@@ -27,6 +27,7 @@ app.use(express.json());
 
 // ------- | template engines (app.set, carpeta views)
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, './views')); // Define la ubicación de la carpeta de las Vistas.
 
 
 // ------- | required route system

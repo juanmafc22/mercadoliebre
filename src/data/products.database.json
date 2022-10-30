@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1667066761091,
+        "categoria": 1,
+        "titulo": "Bicicleta Nordic",
+        "precio": 19900,
+        "descuento": 0,
+        "detalle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis nulla tellus, rhoncus accumsan odio imperdiet eu. Maecenas at fringilla augue. In hac habitasse platea dictumst. Aenean urna erat, interdum a consequat at, tempor sit amet eros. Etiam faucibus aliquet dui, non condimentum erat sollicitudin at.",
+        "imagen": "img-prod-bici-1667065723912.png",
+        "nuevo": true
+    },
+    {
+        "id": 1667066773612,
+        "categoria": 1,
+        "titulo": "Bicicleta Infantil con rueditas",
+        "precio": 45000,
+        "descuento": 5,
+        "detalle": "Suspendisse eleifend ipsum tortor, ut porta velit eleifend in. Cras congue scelerisque elit sed porta. Sed ullamcorper eu nisi vel mattis. Vestibulum suscipit felis quis ornare aliquam. Nam in quam a velit ullamcorper volutpat. Phasellus sit amet augue eget dolor blandit commodo.",
+        "imagen": "img-prod-bici-1667065814271.png",
+        "nuevo": false
+    },
+    {
+        "id": 1667066810371,
+        "categoria": 1,
+        "titulo": "Bicicleta Plegable",
+        "precio": 120500,
+        "descuento": 10,
+        "detalle": "Nunc id est sagittis, semper dui a, hendrerit ex. Nulla eu ornare nibh. In aliquet nisl at turpis maximus maximus. Morbi vel lorem a eros dignissim tempor non a lectus. ",
+        "imagen": "img-prod-bici-1667065877121.png",
+        "nuevo": true
+
+    },
+    {
+        "id": 1667066821370,
+        "categoria": 2,
+        "titulo": "iPhone 14",
+        "precio": 345800,
+        "descuento": 0,
+        "detalle": "Sed turpis erat, elementum sit amet lacus eu, viverra bibendum massa. Praesent hendrerit mauris vitae elementum dignissim. Phasellus vestibulum in nunc non vulputate. Ut at ex ultricies, tristique sapien nec, hendrerit risus. Aenean dignissim, justo in condimentum blandit, erat elit dictum erat, ac mollis felis massa quis lectus.",
+        "imagen": "img-prod-celu-1667066194850.png",
+        "nuevo": false
+    },
+    {
+        "id": 1667066832992,
+        "categoria": 2,
+        "titulo": "Xiaomi Mi Max 3",
+        "precio": 112000,
+        "descuento": 15,
+        "detalle": "Nunc quis sem ipsum. Curabitur pretium tincidunt eros, non pharetra massa. Phasellus dui sem, luctus ac efficitur sit amet, molestie in sem. Fusce interdum vestibulum massa, quis vehicula orci sodales in. Fusce facilisis iaculis egestas. Etiam iaculis placerat magna ac gravida. ",
+        "imagen": "img-prod-celu-1667066252307.png",
+        "nuevo": true
+    },
+    {
+        "id": 1667066843091,
+        "categoria": 2,
+        "titulo": "Samsung A3",
+        "precio": 39000,
+        "descuento": 17,
+        "detalle": "Curabitur accumsan viverra diam eu convallis. Aliquam blandit eros velit, pretium ultrices nisl venenatis vitae. Nullam ultrices pharetra est in feugiat. Ut ac posuere sapien. Duis scelerisque placerat justo non posuere. Integer metus est, pellentesque a mauris eu, condimentum bibendum mauris. In sed lectus pellentesque velit sodales rutrum a eget eros. Vivamus leo massa, auctor eu nulla sed, finibus suscipit mauris. ",
+        "imagen": "img-prod-celu-1667066317062.png",
+        "nuevo": true
+    },
+    {
+        "id": 1667066853487,
+        "categoria": 3,
+        "titulo": "Mac Book Air Pro Tablet",
+        "precio": 340000,
+        "descuento": 10,
+        "detalle": "Nunc sollicitudin scelerisque sapien, vitae ultricies felis elementum eu. In at elit arcu. Maecenas accumsan molestie velit eget accumsan. Aliquam ut odio nisi. Vestibulum sollicitudin magna diam, ut aliquam lacus fermentum id. Aenean blandit aliquam elit, sed porta dolor dictum ut. ",
+        "imagen": "img-prod-comp-1667065350164.png",
+        "nuevo": false
+    },
+    {
+        "id": 1667066868456,
+        "categoria": 3,
+        "titulo": "PC Hub Max SRX",
+        "precio": 234000,
+        "descuento": 0,
+        "detalle": "Proin suscipit nulla sit amet eros cursus luctus. Etiam sit amet justo in sem finibus sagittis. Proin luctus libero id dui vehicula pellentesque. Quisque scelerisque sapien nec est rhoncus luctus. Maecenas nulla purus, lobortis vitae aliquam non, convallis at justo. Nam at dui at orci tincidunt pretium tristique vel massa. Aliquam iaculis nunc molestie metus sagittis dignissim. Ut sed ex vitae magna semper ultrices at et risus. ",
+        "imagen": "img-prod-comp-1667065508549.png",
+        "nuevo": true
+    },
+    {
+        "id": 1667066878695,
+        "categoria": 3,
+        "titulo": "Lenovo X3R442",
+        "precio": 290000,
+        "descuento": 0,
+        "detalle": "Sed lobortis justo sit amet nunc lobortis, in iaculis ligula rhoncus. Donec nec magna id lorem pharetra lacinia. Integer vitae mattis justo, non vulputate neque. Phasellus eget nibh quis lacus tincidunt ultrices varius vel lectus. Maecenas vehicula eu risus convallis fringilla. Cras sagittis cursus ipsum, eget suscipit massa viverra ut. ",
+        "imagen": "img-prod-comp-1667065658569.png",
+        "nuevo": true
+    },
+    {
+        "id": 1667066890917,
+        "categoria": 4,
+        "titulo": "Motosierra Circular Skil",
+        "precio": 99000,
+        "descuento": 0,
+        "detalle": "Integer vitae nibh in nisl dictum ornare blandit molestie felis. Fusce auctor nisi at nibh porttitor ornare. Sed sagittis nisi nisl, sed iaculis arcu cursus ut. Aliquam quis diam sit amet est imperdiet tristique sollicitudin nec massa. Vivamus gravida mauris mauris, vel ullamcorper justo malesuada vel. Sed ut varius lacus. ",
+        "imagen": "img-prod-herr-1667065964724.png",
+        "nuevo": false
+
+    },
+    {
+        "id": 1667066900708,
+        "categoria": 4,
+        "titulo": "Moladora Bosch Pro 44",
+        "precio": 199000,
+        "descuento": 9,
+        "detalle": "Curabitur vestibulum odio eget mi sollicitudin, ut laoreet leo varius. Curabitur et ipsum venenatis, rutrum ante id, lobortis diam. Donec luctus diam eu faucibus elementum. Donec tempor tellus et orci aliquam, lobortis posuere magna vulputate. Donec vulputate neque quis scelerisque mollis. ",
+        "imagen": "img-prod-herr-1667066030051.png",
+        "nuevo": false
+    },
+    {
+        "id": 1667066912468,
+        "categoria": 4,
+        "titulo": "Sierra Lineal",
+        "precio": 12000,
+        "descuento": 34,
+        "detalle": "Donec bibendum metus sed arcu pellentesque commodo. Aenean suscipit nisl diam, eu mollis magna elementum euismod. Suspendisse quam velit, luctus vel urna eu, sollicitudin volutpat metus. Fusce ante mauris, luctus at sem a, interdum vulputate justo. Cras quis eros faucibus velit congue porttitor eget quis sapien. Suspendisse tempus convallis mauris vitae finibus. Aenean aliquet sapien sed mi semper volutpat.",
+        "imagen": "img-prod-herr-1667066094325.png",
+        "nuevo": true
+    }
+]
