@@ -1,10 +1,11 @@
 
 // ------- | requires
 const express = require("express");
-const mainRouter = require("./routes/main.router");
-const usersRouter = require("./routes/users.router");
 const path = require("path");
 const publicPath = path.resolve(__dirname, "../public");
+const mainRouter = require("./routes/main.router");
+const usersRouter = require("./routes/users.router");
+const productsRouter = require("./routes/productos.router");
 
 
 // ------- | express () 
@@ -33,6 +34,7 @@ app.set('views', path.join(__dirname, './views')); // Define la ubicación de la
 // ------- | required route system
 app.use("/", mainRouter);
 app.use("/users", usersRouter);
+app.use("/productos/", productsRouter);
 
 
 // ------- | seteo inicial del error 404 

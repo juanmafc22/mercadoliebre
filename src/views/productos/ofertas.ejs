@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos a Mercado Liebre</title>
+    <title>Los productoso en oferta</title>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <%- include("./partials/header") %> 
+    <%- include("../partials/header") %> 
           
     <main>
         <!-- Section para el banner -->
@@ -29,55 +29,20 @@
             </div>
         </section>
         
-        <!-- Sección "basado en tu última visita" -->
-        <section>
-            <h3 class="main__titulares">Products en oferta con descuento</h3>
-            
-            <div class="main__sectionUltimaVisita">
-
-                <!-- inicio ultima visita cafetera -->
-
-                <% products.forEach (product => {  %>
-
-                    <% if (product.descuento != 0) { %>
-
-                    <article class="main__article">
-                        <div class="main__articleImgBottomBorder" >
-                            <img class="main__articleImg" src="images/<%= product.imagen  %>" alt="<%= product.titulo %>">
-                        </div>
-                        <div class="main__articleTextosDisplayFlex">
-                            <p class="main__articleTextoPrecio">$<%= product.precio %></p>
-                            <p class="main__articleTextoDescuento"><%= product.descuento %>% descuento</p>
-                            <i class="fa-solid fa-truck main__fa-truck"></i>
-                        </div>
-                        <div class="main__articleTextoTit">
-                            <p class="main__articleTextoTitular"><%= product.titulo  %></p>
-                        </div>
-                    </article>
-                    
-                    <% } %>
-
-                <% }) %>
-               
-               
-            </div>
-
-        </section>
-
 
         <!-- Sección "ofertas" -->
         <section>
-            <h3 class="main__titulares">Los nuevos ingresos</h3>
+            <h3 class="main__titulares">Todos los productos en oferta con descuentos</h3>
                 
                 <div class="main__sectionUltimaVisita">
 
                     <% products.forEach ( product => {   %>
 
-                        <% if (product.nuevo == true) {  %>
+                        <% if (product.descuento != 0) {  %>
 
                             <article class="main__article">
                                 <div class="main__articleImgBottomBorder" >
-                                    <img class="main__articleImg" src="/images/<%= product.imagen  %>" alt="<%= product.titulo %>">
+                                    <img class="main__articleImg" src="/images/<%= product.imagen  %>" alt="Cafetera Moulinex">
                                 </div>
                                 <div class="main__articleTextosDisplayFlex">
                                     <p class="main__articleTextoPrecio">$<%= product.precio %></p>
@@ -140,7 +105,7 @@
         </section>
     </main>
 
-    <%- include("./partials/footer") %>
+    <%- include("../partials/footer") %>
     
     <!-- final -->
     
