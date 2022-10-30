@@ -11,7 +11,21 @@ const productsController = {
     ofertas: (req, res) => {
 
         res.render("productos/ofertas", {products})
+    },
 
+    categorias: (req, res) => {
+
+        let categorias = [];
+         
+        products.forEach (product => {
+        
+            if (!categorias.includes(product.categoria)) {
+                categorias.push(product.categoria);
+            }
+        });
+        
+
+        res.render("productos/categorias", {categorias});
     }
 
 }

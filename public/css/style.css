@@ -155,14 +155,15 @@ main {
 .main__articleImg {
     width: auto;
     height: auto;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 163px;
+    max-height: 163px;
 }
 
 .main__articleImgBottomBorder {
     border-bottom: solid 1px #ddd;
     display: flex;
     justify-content: center;
+    padding-bottom: 14px; 
 }
 
 .main__articleTextosDisplayFlex {
@@ -197,27 +198,23 @@ main {
 .main__article:hover > .main__articleTextoTitular {
     color: #FF0000;
 }
-/*
+
 .main__articleTextoTit {
     font-weight: normal; 
     opacity: 0.7;
     
 }
-*/
 
-
-/*
 .main__article:hover > .main__articleTextoTit {
     font-weight: bold; 
     opacity: 1;
 }
-*/
 
 .main__titulares {
     font-size: 22px;
     font-weight: 600;
     color: #444;
-    margin: 18px 0 6px 18px;
+    padding: 18px 0 6px 18px;
 }
 
 .main__fa-truck {
@@ -285,7 +282,21 @@ footer {
     display: block;
 }
 
+/* Aqui comienzan los estilos de la pagina categorias */
 
+.main__listar-categorias {
+    padding: 5px 0 3px 19px;
+}
+
+.main__texto-categorias {
+    padding: 15px 0 25px 17px;
+}
+
+.main__parrafos {
+    margin-bottom: 7px;
+}
+
+/* Aqui comienzan los media quieries */
 
 @media (min-width: 360px) {
     

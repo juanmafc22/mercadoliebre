@@ -1,7 +1,7 @@
 [
     {
         "id": 1667066761091,
-        "categoria": 1,
+        "categoria": "Bicicletas",
         "titulo": "Bicicleta Nordic",
         "precio": 19900,
         "descuento": 0,
@@ -11,7 +11,7 @@
     },
     {
         "id": 1667066773612,
-        "categoria": 1,
+        "categoria": "Bicicletas",
         "titulo": "Bicicleta Infantil con rueditas",
         "precio": 45000,
         "descuento": 5,
@@ -21,7 +21,7 @@
     },
     {
         "id": 1667066810371,
-        "categoria": 1,
+        "categoria": "Bicicletas",
         "titulo": "Bicicleta Plegable",
         "precio": 120500,
         "descuento": 10,
@@ -32,7 +32,7 @@
     },
     {
         "id": 1667066821370,
-        "categoria": 2,
+        "categoria": "Telefonos Celulares",
         "titulo": "iPhone 14",
         "precio": 345800,
         "descuento": 0,
@@ -42,7 +42,7 @@
     },
     {
         "id": 1667066832992,
-        "categoria": 2,
+        "categoria": "Telefonos Celulares",
         "titulo": "Xiaomi Mi Max 3",
         "precio": 112000,
         "descuento": 15,
@@ -52,7 +52,7 @@
     },
     {
         "id": 1667066843091,
-        "categoria": 2,
+        "categoria": "Telefonos Celulares",
         "titulo": "Samsung A3",
         "precio": 39000,
         "descuento": 17,
@@ -62,7 +62,7 @@
     },
     {
         "id": 1667066853487,
-        "categoria": 3,
+        "categoria": "Tecnología",
         "titulo": "Mac Book Air Pro Tablet",
         "precio": 340000,
         "descuento": 10,
@@ -72,7 +72,7 @@
     },
     {
         "id": 1667066868456,
-        "categoria": 3,
+        "categoria": "Tecnología",
         "titulo": "PC Hub Max SRX",
         "precio": 234000,
         "descuento": 0,
@@ -82,7 +82,7 @@
     },
     {
         "id": 1667066878695,
-        "categoria": 3,
+        "categoria": "Tecnología",
         "titulo": "Lenovo X3R442",
         "precio": 290000,
         "descuento": 0,
@@ -92,7 +92,7 @@
     },
     {
         "id": 1667066890917,
-        "categoria": 4,
+        "categoria": "Herramientas",
         "titulo": "Motosierra Circular Skil",
         "precio": 99000,
         "descuento": 0,
@@ -103,7 +103,7 @@
     },
     {
         "id": 1667066900708,
-        "categoria": 4,
+        "categoria": "Herramientas",
         "titulo": "Moladora Bosch Pro 44",
         "precio": 199000,
         "descuento": 9,
@@ -113,12 +113,12 @@
     },
     {
         "id": 1667066912468,
-        "categoria": 4,
+        "categoria": "Herramientas",
         "titulo": "Sierra Lineal",
         "precio": 12000,
         "descuento": 34,
         "detalle": "Donec bibendum metus sed arcu pellentesque commodo. Aenean suscipit nisl diam, eu mollis magna elementum euismod. Suspendisse quam velit, luctus vel urna eu, sollicitudin volutpat metus. Fusce ante mauris, luctus at sem a, interdum vulputate justo. Cras quis eros faucibus velit congue porttitor eget quis sapien. Suspendisse tempus convallis mauris vitae finibus. Aenean aliquet sapien sed mi semper volutpat.",
         "imagen": "img-prod-herr-1667066094325.png",
         "nuevo": true
-    }
+    } 
 ]
