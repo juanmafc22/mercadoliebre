@@ -6,8 +6,6 @@ const products = JSON.parse(fs.readFileSync(prodsFilePath, 'utf-8'));
 
 const productsController = {
 
-
-
     ofertas: (req, res) => {
 
         res.render("productos/ofertas", {products})
@@ -39,7 +37,19 @@ const productsController = {
         });
 
         res.render("productos/categorias-list", {filteredProds});
+    },
 
+    verItem: (req, res) => {
+
+        const id = req.params.id;
+
+        const producto = products.find ( product => {
+            if (product.id == id) {
+                return product;
+            }
+        });
+
+        res.render("productos/ver-item", {producto});
     }
 
 }

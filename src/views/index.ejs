@@ -29,7 +29,7 @@
             </div>
         </section>
         
-        <!-- Sección "basado en tu última visita" -->
+        <!-- Sección ofertas para todos los productos que tienen un descuento aplicado -->
         <section>
             <h3 class="main__titulares">Products en oferta con descuento %</h3>
             
@@ -51,7 +51,7 @@
                             <i class="fa-solid fa-truck main__fa-truck"></i>
                         </div>
                         <div class="main__articleTextoTit">
-                            <a class="a__link-gral" href=""><p class="main__articleTextoTitular"><%= product.titulo  %></p></a>
+                            <a class="a__link-gral" href="/productos/<%= product.id %>"><p class="main__articleTextoTitular"><%= product.titulo  %></p></a>
                         </div>
                     </article>
                     
@@ -65,7 +65,7 @@
         </section>
 
 
-        <!-- Sección "ofertas" -->
+        <!-- Sección para los productos nuevos -->
         <section>
             <h3 class="main__titulares">Los prductos nuevos</h3>
                 
@@ -85,56 +85,13 @@
                                     <i class="fa-solid fa-truck main__fa-truck"></i>
                                 </div>
                                 <div class="main__articleTextoTit">
-                                    <a class="a__link-gral" href=""><p class="main__articleTextoTitular"><%= product.titulo %></p></a>
+                                    <a class="a__link-gral" href="/productos/<%= product.id %>"><p class="main__articleTextoTitular"><%= product.titulo %></p></a>
                                 </div>
                             </article>
 
                         <% } %>
                     
                     <% }) %>
-                    <!-- inicio ultima visita mac book pro 
-                    <article class="main__article">
-                        <div class="main__articleImgBottomBorder" >
-                            <img class="main__articleImg" src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
-                        </div>
-                        <div class="main__articleTextosDisplayFlex">
-                            <p class="main__articleTextoPrecio">$230.000</p>
-                            <p class="main__articleTextoDescuento">20% off</p>
-                            <i class="fa-solid fa-truck main__fa-truck"></i>
-                        </div>
-                        <div class="main__articleTextoTit">
-                            <p class="main__articleTextoTitular">Mac Book Pro 2019</p>
-                        </div>
-                    </article>
-                    
-                    <article class="main__article">
-                        <div class="main__articleImgBottomBorder" >
-                            <img class="main__articleImg" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
-                        </div>
-                        <div class="main__articleTextosDisplayFlex">
-                            <p class="main__articleTextoPrecio">$70.000</p>
-                            <p class="main__articleTextoDescuento">5% off</p>
-                            <i class="fa-solid fa-truck main__fa-truck"></i>
-                        </div>
-                        <div class="main__articleTextoTit">
-                            <p class="main__articleTextoTitular">Samsung Galaxy S10</p>
-                        </div>
-                    </article>
-                    
-                    <article class="main__article">
-                        <div class="main__articleImgBottomBorder" >
-                            <img class="main__articleImg" src="/images/img-tv-samsung-smart.jpg" alt="Samsung Smart TV 43'">
-                        </div>
-                        <div class="main__articleTextosDisplayFlex">
-                            <p class="main__articleTextoPrecio">$100.000</p>
-                            <p class="main__articleTextoDescuento">30% off</p>
-                            <i class="fa-solid fa-truck main__fa-truck"></i>
-                        </div>
-                        <div class="main__articleTextoTit">
-                            <p class="main__articleTextoTitular">Samsung Smart TV 43"</p>
-                        </div>
-                    </article>
-                    -->
     
                 </div>    
         </section>

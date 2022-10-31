@@ -290,7 +290,7 @@ footer {
 
 .a__link-gral:visited {
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 1px;
     color: #333;
 }
 
@@ -298,9 +298,6 @@ footer {
     text-decoration: none;
     color: #000;
 }
-
-
-
 
 /* Aqui comienzan los estilos de la pagina categorias */
 
@@ -315,6 +312,32 @@ footer {
 .main__parrafos {
     margin-bottom: 7px;
 }
+
+
+/* Aqui comienzan los estilos de la pagina de item individual */
+
+.main__prod-section {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.main__h3-title {
+    padding: 10px 0 10px 10px;
+}
+
+.main__div-img-position {
+    display: flex;
+    justify-content: center;
+}
+
+.main__img {
+    padding: 10px 0 10px 0;
+}
+
+
 
 /* Aqui comienzan los media quieries */
 

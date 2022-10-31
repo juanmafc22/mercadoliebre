@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Mercado Liebre</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <%- include("../partials/header") %> 
+          
+    <main>
+       
+        <!-- Seccion para mostar el producto -->
+        <section>
+        <% if (producto) { %>
+            <h3 class="main__titulares"><%= producto.categoria%>  </h3>
+        <% } %>
+        </section>
+        <section class="main__prod-section">
+            <h3 class="main__h3-title"><%= producto.titulo %></h3>
+            <div class="main__div-img-position">
+                <img class="main__img"  src="/images/<%= producto.imagen %>">
+            </div>
+            <p>$<%= producto.precio %></p>
+
+            <% if (producto.descuento > 0) { %> 
+            <p>Descuento <%= producto.descuento %></p>
+            <% } %> 
+
+            <% if (producto.nuevo == true ) { %>
+            <p>Producto nuevo</p>
+            <% } else { %>  
+            <p>Producto usado</p>
+            <% } %>  
+            <p><%= producto.detalle %></p>
+        </section>
+
+
+        
+    </main>
+
+    <%- include("../partials/footer") %>
+    
+    
+</body>
+</html>
