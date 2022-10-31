@@ -27,12 +27,12 @@
 
         <!-- Sección "ofertas" -->
         <section>
-            <h3 class="main__titulares">Las 4 categorias de los productos en venta</h3>
+            <h3 class="main__titulares">Las <%= categorias.length %>  categorias de los productos en venta</h3>
             
             <div class="main__texto-categorias">
 
                     <% categorias.forEach( categoria => { %>
-                        <a href="/productos/categorias/<%= categoria %>"><p class="main__parrafos"><%= categoria %></p></a>
+                        <a class="a__link-gral" href="/productos/categorias/<%= categoria %>"><p class="main__parrafos"><%= categoria %></p></a>
                     <% }) %> 
 
             </div> 

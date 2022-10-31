@@ -31,7 +31,7 @@
         
         <!-- Sección "basado en tu última visita" -->
         <section>
-            <h3 class="main__titulares">Products en oferta con descuento</h3>
+            <h3 class="main__titulares">Products en oferta con descuento %</h3>
             
             <div class="main__sectionUltimaVisita">
 
@@ -40,7 +40,7 @@
                 <% products.forEach (product => {  %>
 
                     <% if (product.descuento != 0) { %>
-
+                    
                     <article class="main__article">
                         <div class="main__articleImgBottomBorder" >
                             <img class="main__articleImg" src="images/<%= product.imagen  %>" alt="<%= product.titulo %>">
@@ -51,7 +51,7 @@
                             <i class="fa-solid fa-truck main__fa-truck"></i>
                         </div>
                         <div class="main__articleTextoTit">
-                            <p class="main__articleTextoTitular"><%= product.titulo  %></p>
+                            <a class="a__link-gral" href=""><p class="main__articleTextoTitular"><%= product.titulo  %></p></a>
                         </div>
                     </article>
                     
@@ -67,7 +67,7 @@
 
         <!-- Sección "ofertas" -->
         <section>
-            <h3 class="main__titulares">Los nuevos ingresos</h3>
+            <h3 class="main__titulares">Los prductos nuevos</h3>
                 
                 <div class="main__sectionUltimaVisita">
 
@@ -85,7 +85,7 @@
                                     <i class="fa-solid fa-truck main__fa-truck"></i>
                                 </div>
                                 <div class="main__articleTextoTit">
-                                    <p class="main__articleTextoTitular"><%= product.titulo %></p>
+                                    <a class="a__link-gral" href=""><p class="main__articleTextoTitular"><%= product.titulo %></p></a>
                                 </div>
                             </article>
 

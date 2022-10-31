@@ -282,6 +282,26 @@ footer {
     display: block;
 }
 
+.a__link-gral {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #333;
+}
+
+.a__link-gral:visited {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #333;
+}
+
+.a__link-gral:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
 /* Aqui comienzan los estilos de la pagina categorias */
 
 .main__listar-categorias {
@@ -371,13 +391,13 @@ footer {
     
     /* Decoración links para las barras de nav del header */
     .header__barraNavegacion > li > a, a:visited {
-        text-decoration: none;
+        text-decoration: underline;
+        text-underline-offset: 5px;
         color: #000;
     }
     .header__barraNavegacion > li > a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: #000;
-        text-underline-offset: 5px;
     }
 
     .header__hamburgerMenu {
