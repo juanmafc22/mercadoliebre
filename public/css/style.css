@@ -211,7 +211,7 @@ main {
 }
 
 .main__titulares {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: #444;
     padding: 18px 0 6px 18px;
@@ -326,6 +326,25 @@ footer {
 
 .main__h3-title {
     padding: 10px 0 10px 10px;
+    color: #333;
+    font-size: 22px;
+}
+
+.main_p {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.texto-usado-nuevo {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0 5px 10px; 
+}
+
+.main_p-descuento {
+    font-size: 14px;
+    color: #39b54a;
 }
 
 .main__div-img-position {
@@ -335,6 +354,52 @@ footer {
 
 .main__img {
     padding: 10px 0 10px 0;
+}
+
+.div-precio-descuento-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.texto-detalle-titulo {
+    font-size: 17px;
+    padding: 13px 0px 5px 10px;
+}
+
+.texto-detalle {
+    font-size: 15px;
+    padding: 0px 10px 10px 10px;
+    color: #333;
+}
+
+.boton-comprar {
+    background-color: #1259c3;
+    color: #ebebeb;
+    width: 160px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px;
+    font-weight: bold; 
+    margin: 10px 0px 5px 0px;
+}
+
+.link-boton {
+    text-decoration: none;
+}
+
+.link-boton:hover {
+    text-decoration: none;
+}
+
+.link-boton:visited {
+    text-decoration: none;
+}
+
+.div-columnas-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -373,6 +438,11 @@ footer {
         /* box-shadow: 0px 0px 8px #555; */
         margin-bottom: 24px;
     }
+
+    .texto-detalle {
+        padding: 0px 50px 10px 10px;
+    }
+
 }
 
 @media (min-width: 769px) {
@@ -454,6 +524,29 @@ footer {
     .footer__block-a-flex {
         display: flex;
     }
-
     
+    .div-columnas-flex {
+        flex-direction: row;
+    }
+
+    .texto-columna {
+        width: 50%;
+    }
+
+    .main__div-img-position {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__h3-title {
+        padding: 10px 0 10px 22px;
+    }
+
+    .div-precio-descuento-flex {
+        padding-left: 22px;
+    }
+
+    .texto-usado-nuevo {
+        padding-left: 32px;
+    }
 }

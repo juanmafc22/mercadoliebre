@@ -30,22 +30,36 @@
         <% } %>
         </section>
         <section class="main__prod-section">
+        <div class="div-columnas-flex">
+            <div class="texto-columna">
             <h3 class="main__h3-title"><%= producto.titulo %></h3>
             <div class="main__div-img-position">
                 <img class="main__img"  src="/images/<%= producto.imagen %>">
             </div>
-            <p>$<%= producto.precio %></p>
+            <div>
+                <div class="div-precio-descuento-flex">
+                    <p class="main_p">$<%= producto.precio %></p>
+                    <% if (producto.descuento > 0) { %> 
+                    <p class="main_p-descuento">Descuento <%= producto.descuento %>%</p>
+                <% } %>
+                </div>
 
-            <% if (producto.descuento > 0) { %> 
-            <p>Descuento <%= producto.descuento %></p>
-            <% } %> 
+                <% if (producto.nuevo == true ) { %>
+                <p class="texto-usado-nuevo">Producto nuevo</p>
+                <% } else { %>  
+                <p class="texto-usado-nuevo">Producto usado</p>
+                <% } %>  
+            </div>
 
-            <% if (producto.nuevo == true ) { %>
-            <p>Producto nuevo</p>
-            <% } else { %>  
-            <p>Producto usado</p>
-            <% } %>  
-            <p><%= producto.detalle %></p>
+            <div class="main__div-img-position">
+                <a class="link-boton" href=""><p class="boton-comprar">Comprar Ahora</p></a>
+            </div>
+            </div>
+            <div class="texto-columna">
+                <p class="texto-detalle-titulo">Detalle del producto</p>
+                <p class="texto-detalle"><%= producto.detalle %></p>
+            </div>
+        </div>
         </section>
 
 
