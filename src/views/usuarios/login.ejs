@@ -27,21 +27,22 @@
 
         <div class="container">
 
-            <form id="form" class="form">
+            <form method="POST" id="form" class="form">
 
                 <div class="form-control">
                     <label for="username">Nombre de usuario</label>
-                    <input type="text" id="username" placeholder="Ingrese su usuario">
+                    <input type="text" id="username" name="usuario" placeholder="Ingrese su usuario22">
                     <small>Error en el nombre de usuario</small>
                 </div>
                 <div class="form-control">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" placeholder="Ingrese su contraseña">
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
                     <small>Error en la contraseña</small>
                 </div>
 
                 <div class="submit-buttons">
-                    <button type="submit">Ingresar</button>
+                    <input type="submit">
+                    <button type="submit" name="submitButton">Ingresar</button>
                     <button type="reset">Borrar</button>
                 </div>
 

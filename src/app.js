@@ -10,7 +10,7 @@ const productsRouter = require("./routes/productos.router");
 
 // ------- | express () 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 
 // ------- | server start
@@ -22,7 +22,7 @@ app.listen(port, () => {
 
 // ------- | middlewares (app.use)
 app.use(express.static(publicPath));
-app.use(express.urlencoded({ extended:false } ));
+app.use(express.urlencoded({ extended:false } )); // preparar app.js para que funciones con metodo POST
 app.use(express.json());
 
 

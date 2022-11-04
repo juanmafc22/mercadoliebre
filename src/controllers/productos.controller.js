@@ -6,11 +6,14 @@ const products = JSON.parse(fs.readFileSync(prodsFilePath, 'utf-8'));
 
 const productsController = {
 
+    // peticion GET para visualizar solo los productos en oferta
     ofertas: (req, res) => {
 
         res.render("productos/ofertas", {products})
     },
 
+
+    // peticion GET para visualizar las diferenets categorias de los productos
     categorias: (req, res) => {
 
         let categorias = [];
@@ -25,6 +28,7 @@ const productsController = {
         res.render("productos/categorias", {products, categorias});
     },
 
+    // peticion GET con ruta parametrizada para visualizar los prods segun su categoria
     categoriasList: (req, res) => {
 
         const categoria = req.params.categoria;
@@ -39,6 +43,8 @@ const productsController = {
         res.render("productos/categorias-list", {filteredProds});
     },
 
+
+    // peticion GET con ruta parametrizada de ID de producto para ver un producto individual
     verItem: (req, res) => {
 
         const id = req.params.id;
@@ -50,8 +56,13 @@ const productsController = {
         });
 
         res.render("productos/ver-item", {producto});
-    }
+    },
 
+    // peticion GET con ruta parametrizada de ID de producto para ver un producto individual
+    alta: (req, res) => {
+
+        res.render("productos/lata");
+    }
 }
 
 module.exports = productsController;

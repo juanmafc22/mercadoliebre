@@ -15,4 +15,7 @@ router.get("/categorias/:categoria", productsController.categoriasList);
 // peticion GET con ruta parametrizada de ID de producto para ver un producto individual
 router.get("/:id", productsController.verItem);
 
+// peticion GET para mostar el formulario de alta de producto
+router.get("/alta", productsController.alta);
+
 module.exports = router;

@@ -10,6 +10,19 @@ const usersController = {
         res.render("usuarios/register");
     },
 
+    infoLogin: (req, res) => {
+
+        // codigo verificara la info ingresada
+
+        //
+        res.redirect("usuarios/redirect")
+
+    }
+
+
+
+
+
 };
 
 module.exports = usersController;
