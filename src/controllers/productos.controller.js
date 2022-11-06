@@ -73,18 +73,47 @@ const productsController = {
         res.render("productos/alta", {categorias});
     },
 
+    // peticion POST para almacenar el nuevo producto 
     almacenar: (req, res) => {
 
-        const nuevoProd = {
-            "id": Date.now(),
-            "categoria": req.body.categoria,
-            "titulo": req.body.titulo,
-            "precio": req.body.precio,
-            "descuento": req.body.descuento,
-            "detalle": req.body.detalle,
-            "nuevo": req.body.nuevo
-       } 
+        let categorias = [];
+        
+        products.forEach ( product => {
+        
+            if (!categorias.includes(product.categoria)) {
+                categorias.push(product.categoria);
+            }
+        });
+
+        let categoria = "";
+
+        if (req.body.cat1 == "none") {
+            categoria = req.body.cat2;
+        } else {
+            categoria = req.body.cat1;
+        }
+
+        products.push({
+            id: Date.now(),
+            categoria: categoria,
+            titulo: req.body.titulo,
+            precio: req.body.precio,
+            descuento: req.body.descuento,
+            detalle: req.body.detalle,
+            nuevo: req.body.nuevo
+        });
+
+        fs.writeFileSync(prodsFilePath, JSON.stringify(products, null, " "));
+
+        res.redirect(301, "respuesta");
+        // res.redirect("http://localhost:5001/productos/respuesta")
+    },
+
+    respuesta: (req, res) => {
+
+        res.render("productos/respuesta");
     }
+
 }
 
 module.exports = productsController;

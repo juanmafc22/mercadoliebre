@@ -32,38 +32,38 @@
             
                 <!-- <form action="/index" method="post" class="form-control"> -->
 
-                <form id="form" action="/index" method="post">
+                <form id="form" action="/productos/almacenar" method="post">
                 
                     <div class="form-control">
                         <label for="titulo">Titulo</label>
-                        <input type="text" id="titulo" placeholder="Ingrese el nombre del producto" >
+                        <input type="text" id="titulo" name="titulo" placeholder="Ingrese el nombre del producto" >
                     </div>
 
                      
                     <div class="form-control">
                         <label for="titulo">Categoria</label>
                         <select name="cat1">
-                            <option>Elija una categoria: -----</option>
+                            <option value="none">Elija una categoria: -----</option>
                             <% categorias.forEach(categoria => { %>
-                                <option value="<%= categoria %>"><%= categoria %> </option>
+                            <option value="<%= categoria %>"><%= categoria %> </option>
                             <% }) %>
                         </select>
-                        <input type="text" id="titulo" placeholder="O ingrese una categoria nueva" >
+                        <input name="cat2"  type="text" id="titulo" placeholder="O ingrese una categoria nueva" >
                     </div>
 
                     <div class="form-control">
                         <label for="precio">Precio del producto ($)</label>
-                        <input class="ancho-inputs-numericos" type="text" id="titulo" placeholder="Indicar precio">
+                        <input class="ancho-inputs-numericos" name="precio" type="text" id="titulo" placeholder="Indicar precio">
                     </div>
 
                     <div class="form-control">
                         <label for="descuento">Descuento del producto (%)</label>
-                        <input class="ancho-inputs-numericos" type="text" id="descuento" placeholder="Indicar %" >
+                        <input class="ancho-inputs-numericos" name="descuento" type="text" id="descuento" placeholder="Indicar %" >
                     </div>
 
                     <div class="form-control">
                         <label for="detalle">Detalle del producto</label>
-                        <textarea class="textarea" id="detalle" placeholder="Detalle del producto" ></textarea>
+                        <textarea class="textarea" id="detalle" name="detalle" placeholder="Detalle del producto" ></textarea>
                     </div>
 
                     <div class="form-control">
