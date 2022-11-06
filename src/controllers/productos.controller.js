@@ -76,6 +76,8 @@ const productsController = {
     // peticion POST para almacenar el nuevo producto 
     almacenar: (req, res) => {
 
+        console.log(req.file);
+
         let categorias = [];
         
         products.forEach ( product => {
@@ -100,7 +102,8 @@ const productsController = {
             precio: req.body.precio,
             descuento: req.body.descuento,
             detalle: req.body.detalle,
-            nuevo: req.body.nuevo
+            nuevo: req.body.nuevo,
+            imagen: req.file.filename
         });
 
         fs.writeFileSync(prodsFilePath, JSON.stringify(products, null, " "));

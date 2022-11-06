@@ -1,5 +1,24 @@
 let express = require("express");
 let router = express.Router();
+const path = require("path");
+const multer = require("multer");
+
+const storage = multer.diskStorage ({
+
+    destination: (req, file, cb) => {
+
+        cb(null, path.join(__dirname, "../../public/images/"));
+    },
+
+    filename: (req, file, cb) => {
+
+        const newFileName = "img-prod-" + Date.now() + path.extname(file.originalname);
+        cb(null, newFileName);
+    }, 
+
+});
+
+const upload = multer({ storage:storage });
 
 const productsController = require("../controllers/productos.controller");
 
@@ -19,7 +38,7 @@ router.get("/ver/:id", productsController.verItem);
 router.get("/alta", productsController.alta);
 
 // peticion POST para almacenar el formulario de alta de producto
-router.post("/almacenar", productsController.almacenar);
+router.post("/almacenar", upload.single("imagen"), productsController.almacenar);
 
 router.get("/respuesta", productsController.respuesta);
 

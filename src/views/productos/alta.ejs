@@ -32,7 +32,7 @@
             
                 <!-- <form action="/index" method="post" class="form-control"> -->
 
-                <form id="form" action="/productos/almacenar" method="post">
+                <form id="form" action="/productos/almacenar" method="POST" enctype="multipart/form-data">
                 
                     <div class="form-control">
                         <label for="titulo">Titulo</label>
@@ -68,7 +68,7 @@
 
                     <div class="form-control">
                         <label for="imagen">Imagen del producto</label>
-                        <input type="file" id="imagen" accept=".jpg, .jpeg, .png" >
+                        <input type="file" name="imagen" id="imagen" accept=".jpg, .jpeg, .png" >
                     </div>
 
                     <div class="form-control-row">
