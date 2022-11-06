@@ -12,10 +12,12 @@ router.get("/categorias", productsController.categorias);
 // peticion GET con ruta parametrizada para visualizar los prods segun su categoria
 router.get("/categorias/:categoria", productsController.categoriasList);
 
+// se mete al final de todos para que no genere conflictos
 // peticion GET con ruta parametrizada de ID de producto para ver un producto individual
-router.get("/:id", productsController.verItem);
+router.get("/ver/:id", productsController.verItem);
 
 // peticion GET para mostar el formulario de alta de producto
 router.get("/alta", productsController.alta);
+
 
 module.exports = router;
