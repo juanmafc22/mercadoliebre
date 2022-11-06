@@ -9,7 +9,7 @@
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/alta-prod.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
@@ -26,53 +26,64 @@
     <!-- Aquí va el formulario de registro -->
     <main>
 
-        <h3 class="titular__registrese">Alta de producto para la venta</h3>
+        <h3 class="titular__alta">Alta de producto para la venta</h3>
 
             <div class="container">
             
                 <!-- <form action="/index" method="post" class="form-control"> -->
 
-                <form id="form" action="/index" method="post" class="form">
+                <form id="form" action="/index" method="post">
                 
                     <div class="form-control">
                         <label for="titulo">Titulo</label>
-                        <input type="text" id="titulo" placeholder="Ingrese el nombre del producto">
-                        <small>Error en el titulo</small>
+                        <input type="text" id="titulo" placeholder="Ingrese el nombre del producto" >
+                    </div>
+
+                     
+                    <div class="form-control">
+                        <label for="titulo">Categoria</label>
+                        <select name="cat1">
+                            <option>Elija una categoria: -----</option>
+                            <% categorias.forEach(categoria => { %>
+                                <option value="<%= categoria %>"><%= categoria %> </option>
+                            <% }) %>
+                        </select>
+                        <input type="text" id="titulo" placeholder="O ingrese una categoria nueva" >
                     </div>
 
                     <div class="form-control">
-                        <label for="precio">Precio del producto</label>
-                        <input type="text" id="precio" placeholder="Precio del producto">
-                        <small>Error en el precio</small>
+                        <label for="precio">Precio del producto ($)</label>
+                        <input class="ancho-inputs-numericos" type="text" id="titulo" placeholder="Indicar precio">
                     </div>
 
                     <div class="form-control">
-                        <label for="descuento">Descuento del producto</label>
-                        <input type="text" id="descuento" placeholder="Descuento del producto">
-                        <small>Error en el descuento</small>
+                        <label for="descuento">Descuento del producto (%)</label>
+                        <input class="ancho-inputs-numericos" type="text" id="descuento" placeholder="Indicar %" >
                     </div>
 
                     <div class="form-control">
                         <label for="detalle">Detalle del producto</label>
-                        <input type="text" id="detalle" placeholder="Detalle del producto">
-                        <small>Error en el detalle</small>
+                        <textarea class="textarea" id="detalle" placeholder="Detalle del producto" ></textarea>
                     </div>
 
                     <div class="form-control">
                         <label for="imagen">Imagen del producto</label>
-                        <input class="bgColorFFF" type="file" id="imagen" accept=".jpg, .jpeg, .png">
-                        <small>Error en la imagen del producto</small>
+                        <input type="file" id="imagen" accept=".jpg, .jpeg, .png" >
                     </div>
 
-                    <div class="form-control">
-                        <label for="nuevo">Tipo de producto</label>
-                        <input type="text" id="nuevo">
-                        <small>Error en el tipo de producto</small>
+                    <div class="form-control-row">
+                        <label for="nuevo">Tipo de producto:</label>
+                        <div>
+                            <input class="radio" type="radio" name="nuevo" value="true"> <span class="radio-text">Nuevo</span>
+                        </div>
+                        <div>
+                            <input class="radio" type="radio" name="nuevo" value="false"> <span class="radio-text">Usado</span>
+                        </div>
                     </div>
 
                     <div class="submit-buttons">
-                        <button type="submit">Ingresar</button>
-                        <button type="reset">Borrar</button>
+                        <input class="boton" type="submit" value="Dar de Alta">
+                        <input class="boton" type="reset" value="Borrar">
                     </div>
                 </form>
             
@@ -82,6 +93,5 @@
     </main>
 
     <%- include("../partials/footer") %>
-    <script src="/js/register-form-validator.js"></script>
 </body>
 </html>

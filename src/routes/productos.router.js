@@ -18,5 +18,8 @@ router.get("/ver/:id", productsController.verItem);
 // peticion GET para mostar el formulario de alta de producto
 router.get("/alta", productsController.alta);
 
+// peticion POST para almacenar el formulario de alta de producto
+router.post("/alta", productsController.almacenar);
+
 
 module.exports = router;

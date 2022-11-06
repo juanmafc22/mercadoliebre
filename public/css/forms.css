@@ -92,9 +92,31 @@
     margin-top: 10px;
 }
 
+/* Estilos del alta de prods */
+
+.input-precio {
+    width: 100px;
+}
+
+.input-texto {
+    width: 250px;
+}
+
+.textarea {
+    width: 250px;
+}
+
+.display-radios {
+    display: inline;
+}
+
 @media (min-width: 500px) {
     .form-control input {
         width: 430px;
+    }
+
+    .ancho-input-precio {
+        width: 100px;
     }
 }
     

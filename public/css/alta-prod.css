@@ -1,0 +1,97 @@
+.titular__alta {
+    color: #666;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 0 6px 18px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #111;
+    margin: 10px 0px 0px 15px;
+}
+
+input {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+    background-color: #fff;
+    margin: 4px 0px 0px 15px;
+    width: 250px;
+}
+
+textarea {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+    background-color: #fff;
+    margin: 4px 0px 0px 15px;
+    width: 250px;
+    height: 150px;
+}
+
+.ancho-inputs-numericos {
+    width: 150px;
+}
+
+.radio {
+    width: 50px;
+    margin: 10px -3px 0px 3px;
+}
+
+.radio-text {
+    font-size: 14px;
+    color: #111;
+    margin: 10px 0px 0px -12px; 
+}
+
+.boton {
+    cursor: pointer;
+    width: 150px;
+    border: solid 1px #1259c3;
+    background: #1259c3;
+    color: #fff;
+    border-radius: 6px;
+    height: 33px;
+}
+
+.boton:hover {
+    border: solid 1px #041630;
+    background: #041630;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+}
+
+.form-control-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.submit-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+select {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    font-size: 13px;
+    background-color: #fff;
+    margin: 4px 0px 0px 15px;
+    width: 250px;
+}

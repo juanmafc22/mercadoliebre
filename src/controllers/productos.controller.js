@@ -61,7 +61,29 @@ const productsController = {
     // peticion GET para visualizar el formulario de alta de producto (link de "vender" en la nav general)
     alta: (req, res) => {
 
-        res.render("productos/alta");
+        let categorias = [];
+        
+        products.forEach ( product => {
+        
+            if (!categorias.includes(product.categoria)) {
+                categorias.push(product.categoria);
+            }
+        });
+
+        res.render("productos/alta", {categorias});
+    },
+
+    almacenar: (req, res) => {
+
+        const nuevoProd = {
+            "id": Date.now(),
+            "categoria": req.body.categoria,
+            "titulo": req.body.titulo,
+            "precio": req.body.precio,
+            "descuento": req.body.descuento,
+            "detalle": req.body.detalle,
+            "nuevo": req.body.nuevo
+       } 
     }
 }
 
