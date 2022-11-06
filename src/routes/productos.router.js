@@ -12,7 +12,6 @@ router.get("/categorias", productsController.categorias);
 // peticion GET con ruta parametrizada para visualizar los prods segun su categoria
 router.get("/categorias/:categoria", productsController.categoriasList);
 
-// se mete al final de todos para que no genere conflictos
 // peticion GET con ruta parametrizada de ID de producto para ver un producto individual
 router.get("/ver/:id", productsController.verItem);
 

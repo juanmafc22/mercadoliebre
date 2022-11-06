@@ -58,10 +58,10 @@ const productsController = {
         res.render("productos/ver-item", {producto});
     },
 
-    // peticion GET con ruta parametrizada de ID de producto para ver un producto individual
+    // peticion GET para visualizar el formulario de alta de producto (link de "vender" en la nav general)
     alta: (req, res) => {
 
-        res.render("productos/lata");
+        res.render("productos/alta");
     }
 }
 
