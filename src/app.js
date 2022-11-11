@@ -6,6 +6,7 @@ const publicPath = path.resolve(__dirname, "../public");
 const mainRouter = require("./routes/main.router");
 const usersRouter = require("./routes/users.router");
 const productsRouter = require("./routes/productos.router");
+const methodOverride = require("method-override");
 
 
 // ------- | express () 
@@ -24,6 +25,7 @@ app.listen(port, () => {
 app.use(express.static(publicPath));
 app.use(express.urlencoded({ extended:false } )); // preparar app.js para que funciones con metodo POST
 app.use(express.json());
+app.use(methodOverride("_method")); // preparar app.js para poder implementar metodo PUT o DELETE
 
 
 // ------- | template engines (app.set, carpeta views)

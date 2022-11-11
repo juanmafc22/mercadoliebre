@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Mercado Liebre</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/alta-prod.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <%- include("../partials/header") %> 
+    
+
+          
+    <!-- Aquí va el formulario de registro -->
+    <main>
+
+        <h3 class="titular__alta">Editar este producto</h3>
+
+            <div class="container">
+            
+                <!-- <form action="/index" method="post" class="form-control"> -->
+
+                <% if (editThis) { %>
+
+                <form id="form" action="/productos/editar/:<%= editThis.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+               
+                     
+                        <div class="form-control">
+                            <label for="titulo">Titulo</label>
+                            <input type="text" id="titulo" name="titulo" value="<%= editThis.titulo %> ">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="titulo">Categoria</label>
+                            <input name="categoria"  type="text" id="categoria" value="<%= editThis.categoria %>">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="precio">Precio del producto ($)</label>
+                            <input class="ancho-inputs-numericos" name="precio" type="text" id="titulo" value="<%= editThis.precio %>" >
+                        </div>
+
+                        <div class="form-control">
+                            <label for="descuento">Descuento del producto (%)</label>
+                            <input class="ancho-inputs-numericos" name="descuento" type="text" id="descuento" value="<%= editThis.descuento %>" >
+                        </div>
+
+                        <div class="form-control">
+                            <label for="detalle">Detalle del producto</label>
+                            <textarea class="textarea" id="detalle" name="detalle"><%= editThis.detalle %></textarea>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="imagen">Imagen del producto: <strong>si no se carga una nueva imagen se cargará la que está en registro</strong></label>
+                            <input type="file" name="imagen" id="imagen" accept=".jpg, .jpeg, .png" value="<%= editThis.imagen %>">
+                        </div>
+
+                        <div class="form-control-row">
+                            <% if (editThis.nuevo == true) { %>
+                            <label for="nuevo">El producto está listado como:  <%= "nuevo" %>. Cambiar si es necesario</label>
+                            <% } else { %>
+                            <label for="nuevo">El producto está listado como:  <%= "usado" %>. Cambiar si es necesario</label>
+                            <% } %>
+                            <div>
+                                <input class="radio" type="radio" name="nuevo" value="true"> <span class="radio-text">Nuevo</span>
+                            </div>
+                            <div>
+                                <input class="radio" type="radio" name="nuevo" value="false"> <span class="radio-text">Usado</span>
+                            </div>
+                        </div>
+
+                    <% } %>
+
+                    <div class="submit-buttons">
+                        <input class="boton" type="submit" value="Dar de Alta">
+                        <input class="boton" type="reset" value="Borrar">
+                    </div>
+                </form>
+            
+            
+            </div>
+        
+    </main>
+
+    <%- include("../partials/footer") %>
+</body>
+</html>

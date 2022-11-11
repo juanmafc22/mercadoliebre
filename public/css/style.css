@@ -402,6 +402,10 @@ footer {
     flex-direction: column;
 }
 
+.texto_edit-del-prods {
+    margin: 10px 0px 5px 10px;
+}
+
 
 
 /* Aqui comienzan los media quieries */

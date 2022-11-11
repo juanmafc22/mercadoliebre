@@ -199,5 +199,55 @@
   "detalle": "bici con foto de bici con rueditas precio 555 descuento 5 usada",
   "nuevo": "false",
   "imagen": "img-prod-1667759717649.png"
+ },
+ {
+  "id": 1667824648928,
+  "categoria": "Bicicletas",
+  "titulo": "Producto nuevo 333",
+  "precio": "33333",
+  "descuento": "3",
+  "detalle": "Producto nuevo 333 con precio 33333 y descuento 3 usado",
+  "nuevo": "false",
+  "imagen": "img-prod-1667824648918.png"
+ },
+ {
+  "id": 1667825219313,
+  "categoria": "Bicicletas",
+  "titulo": "Bici",
+  "precio": "33333",
+  "descuento": "3",
+  "detalle": "Bici a 33333 descuento 3 usada",
+  "nuevo": "false",
+  "imagen": "img-prod-1667825219301.png"
+ },
+ {
+  "id": 1667825416478,
+  "categoria": "Bicicletas",
+  "titulo": "Bici",
+  "precio": "11111",
+  "descuento": "1",
+  "detalle": "bici precio 11111 descuendo 1 nueva",
+  "nuevo": "true",
+  "imagen": "img-prod-1667825416469.png"
+ },
+ {
+  "id": 1667825935808,
+  "categoria": "Bicicletas",
+  "titulo": "Bici 77",
+  "precio": "777",
+  "descuento": "7",
+  "detalle": "Bici 77 a precio 777 con descuento 7 usada",
+  "nuevo": "false",
+  "imagen": "img-prod-1667825935796.png"
+ },
+ {
+  "id": 1667826054723,
+  "categoria": "Bicicletas",
+  "titulo": "bici 555",
+  "precio": "555",
+  "descuento": "5",
+  "detalle": "bici 555 a precio 555 descuento 5 nueva",
+  "nuevo": "true",
+  "imagen": "img-prod-1667826054712.png"
  }
 ]

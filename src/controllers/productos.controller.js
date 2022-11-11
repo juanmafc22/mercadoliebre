@@ -115,6 +115,23 @@ const productsController = {
     respuesta: (req, res) => {
 
         res.render("productos/respuesta");
+    },
+
+    recopilar: (req, res) => {
+
+        const id = req.params.id;
+
+        const editThis = products.find ( product => {
+
+            return product.id == id;
+        });
+
+        res.render("productos/editar", {editThis});
+
+    },
+
+    editar: (req, res) => {
+
     }
 
 }

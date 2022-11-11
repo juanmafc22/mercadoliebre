@@ -40,7 +40,15 @@ router.get("/alta", productsController.alta);
 // peticion POST para almacenar el formulario de alta de producto
 router.post("/almacenar", upload.single("imagen"), productsController.almacenar);
 
+// peticion GET para mostrar la respuesta de la carga de producto
 router.get("/respuesta", productsController.respuesta);
+
+// ruta get para mostrar el formulario de edicion
+router.get("/editar/:id", productsController.recopilar);
+
+// ruta put para editar el producto
+router.put("/editar/:id", productsController.editar);
+
 
 
 
