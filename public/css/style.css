@@ -406,6 +406,31 @@ footer {
     margin: 10px 0px 5px 10px;
 }
 
+/* Aqui comienzans los estilos de baja de prod */
+
+.titulo-producto {
+    font-size: 17px;
+    margin: 10px 0px 10px 17px;
+}
+
+.imagen-producto {
+    margin: 0px 0px 10px 17px;
+    width: 275px;
+}
+
+.boton-destroy {
+    background-color: #bb0a0a;
+    color: #FFF;
+    width: 160px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 11px 8px 11px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0px 34px 17px;
+    border: 2px solid #bb0a0a;
+    cursor: pointer;
+}
 
 
 /* Aqui comienzan los media quieries */
@@ -446,6 +471,10 @@ footer {
     .texto-detalle {
         padding: 0px 50px 10px 10px;
     }
+ 
+    .imagen-producto {
+    width: 320px;
+    }   
 
 }
 
@@ -466,20 +495,6 @@ footer {
         text-align: right;
     }
 
-    /* 
-    .header__cajaSuperior__busqueda--input {
-        border: solid 1px #999;
-        border-radius: 6px;
-        color: #000000;
-        font-size: 16px;
-        height: 32px;
-        padding-left: 6px;
-        width: 100%
-    }
-     */
-
-     
-   
     .header__barraNavegacion {
         display: flex;
         list-style: none;
@@ -553,4 +568,9 @@ footer {
     .texto-usado-nuevo {
         padding-left: 32px;
     }
+
+    .imagen-producto {
+        width: 450px;
+    }
+
 }

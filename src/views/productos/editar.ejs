@@ -34,9 +34,8 @@
 
                 <% if (editThis) { %>
 
-                <form id="form" action="/productos/editar/:<%= editThis.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-               
-                     
+                <form id="form" action="/productos/editar/<%= editThis.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+
                         <div class="form-control">
                             <label for="titulo">Titulo</label>
                             <input type="text" id="titulo" name="titulo" value="<%= editThis.titulo %> ">
@@ -68,23 +67,27 @@
                         </div>
 
                         <div class="form-control-row">
-                            <% if (editThis.nuevo == true) { %>
-                            <label for="nuevo">El producto está listado como:  <%= "nuevo" %>. Cambiar si es necesario</label>
-                            <% } else { %>
-                            <label for="nuevo">El producto está listado como:  <%= "usado" %>. Cambiar si es necesario</label>
-                            <% } %>
                             <div>
-                                <input class="radio" type="radio" name="nuevo" value="true"> <span class="radio-text">Nuevo</span>
+                                <input class="radio" type="radio" name="nuevo" value="true"
+                                <% if (editThis.nuevo == true) { %> 
+                                    checked 
+                                <% } %> 
+                                >
+                                <span class="radio-text">Nuevo</span>
                             </div>
                             <div>
-                                <input class="radio" type="radio" name="nuevo" value="false"> <span class="radio-text">Usado</span>
+                                <input class="radio" type="radio" name="nuevo" value="false"
+                                <% if (editThis.nuevo == false ) { %> 
+                                    checked 
+                                <% } %> 
+                                > <span class="radio-text">Usado</span>
                             </div>
                         </div>
 
                     <% } %>
 
                     <div class="submit-buttons">
-                        <input class="boton" type="submit" value="Dar de Alta">
+                        <input class="boton" type="submit" value="Editar Producto">
                         <input class="boton" type="reset" value="Borrar">
                     </div>
                 </form>

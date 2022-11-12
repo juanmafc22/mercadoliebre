@@ -43,11 +43,17 @@ router.post("/almacenar", upload.single("imagen"), productsController.almacenar)
 // peticion GET para mostrar la respuesta de la carga de producto
 router.get("/respuesta", productsController.respuesta);
 
-// ruta get para mostrar el formulario de edicion
+// ruta GET para mostrar el formulario de edicion
 router.get("/editar/:id", productsController.recopilar);
 
-// ruta put para editar el producto
-router.put("/editar/:id", productsController.editar);
+// ruta PUT para editar el producto
+router.put("/editar/:id", upload.single("imagen"), productsController.editar);
+
+// ruta GET para confirmar la baja de un producto
+router.get("/baja/:id", productsController.baja);
+
+// ruta DELETE para dar de baja el producto
+router.delete("/baja-destroy/:id", productsController.destroy);
 
 
 

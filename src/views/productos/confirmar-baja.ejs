@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias de procductos</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/be2f25d2d7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+    <%- include("../partials/header") %> 
+          
+    <main>
+        <!-- Section para el banner -->
+               
+
+        <!-- Sección "ofertas" -->
+        <section>
+            <h3 class="main__titulares">Esta seguro que quiere dar de baja el sugiente producto?</h3>
+            <p class="titulo-producto"><%= producto.titulo %></p>
+            <img class="imagen-producto" src="/images/<%= producto.imagen %> ">
+
+
+            <form id="form" action="/productos/baja-destroy/<%= producto.id %>?_method=DELETE" method="POST">
+                <div class="submit-buttons">
+                    <input class="boton-destroy" type="submit" value="Confirmar la BAJA">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <%- include("../partials/footer") %>
+
+</body>
+</html>

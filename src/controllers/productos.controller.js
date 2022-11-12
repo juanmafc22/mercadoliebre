@@ -95,28 +95,36 @@ const productsController = {
             categoria = req.body.cat1;
         }
 
+        // hack para convertir el string en booleano
+        let nuevo = true;
+        if (req.body.nuevo === "false") {
+            nuevo = false;
+        }
+
         products.push({
             id: Date.now(),
             categoria: categoria,
             titulo: req.body.titulo,
-            precio: req.body.precio,
-            descuento: req.body.descuento,
+            precio: parseInt(req.body.precio),
+            descuento: parseInt(req.body.descuento),
             detalle: req.body.detalle,
-            nuevo: req.body.nuevo,
+            nuevo: nuevo,
             imagen: req.file.filename
         });
 
         fs.writeFileSync(prodsFilePath, JSON.stringify(products, null, " "));
 
-        res.redirect(301, "respuesta");
+        res.redirect(301, "/productos/respuesta");
         // res.redirect("http://localhost:5001/productos/respuesta")
     },
 
+    // peticion GET como respuesta a los Redirect the los diferntes POST/PUT/DELETE
     respuesta: (req, res) => {
 
         res.render("productos/respuesta");
     },
 
+    // peticion GET para mostrar y recopilar el formulario de edicion
     recopilar: (req, res) => {
 
         const id = req.params.id;
@@ -127,10 +135,91 @@ const productsController = {
         });
 
         res.render("productos/editar", {editThis});
-
     },
 
+    // peticion GET para efectivamente editar el producto
     editar: (req, res) => {
+
+        // get the ID of the product being edited
+        let id = req.params.id;
+
+        // store all the existing prod details in an object
+        let editable = products.find(product => {
+            return product.id == id;
+        })
+
+        // set an empty string for the image file name
+        let imagen = "";
+
+        // if not image is being passed through the route, let the image name equal to 
+        // the existeing inmage file name, otherwise the let image name be equal to
+        // the one being passed
+        if (!req.file) {
+            imagen = editable.imagen;
+        } else {
+            imagen = req.file.filename;
+        }
+
+        // hack to convert the boolean value of the "nuevo" to a real boolean
+        let nuevo = true;
+        if (req.body.nuevo === "false") {
+            nuevo = false;
+        }
+
+        let prodEditado = {
+            "id": editable.id,
+            "categoria": req.body.categoria,
+            "titulo": req.body.titulo,
+            "precio": parseInt(req.body.precio),
+            "descuento": parseInt(req.body.descuento),
+            "detalle": req.body.detalle,
+            "imagen": imagen,
+            "nuevo": nuevo
+        }
+
+        // create a new array without the one being edited
+        let newProdArray = products.filter( product => {
+            return product.id != id;
+        });
+
+        // push the edited product into newProdArray
+        newProdArray.push(prodEditado);
+
+        // write the new product JSON
+        fs.writeFileSync(prodsFilePath, JSON.stringify(newProdArray, null, " "));
+
+        res.redirect(301, "/productos/respuesta");
+    },
+
+    // peticion GET para mostar y confirmar la baja de un producto
+    baja: (req, res) => {
+
+        // obtener el ID del producto a destroy
+        let id = req.params.id;
+
+        let producto = products.find (product => {
+
+            return product.id == id;
+        })
+
+        res.render("productos/confirmar-baja", {producto});
+    },
+
+    destroy: (req, res) => {
+
+        // obtener el ID del producto a destroy
+        let id = req.params.id;
+
+        // sacar el el producto ID fuera del array de productos
+        let newProducts = products.filter(product => {
+            return product.id != id;
+        })
+
+        // escribir el nuevo array de products sin 
+        fs.writeFileSync(prodsFilePath, JSON.stringify(newProducts, null, " "));
+
+        // res.redirect("/productos/respuesta");
+        res.redirect("http://localhost:5001/")
 
     }
 
