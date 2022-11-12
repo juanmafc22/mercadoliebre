@@ -1,16 +1,5 @@
 [
  {
-  "id": 1667066761091,
-  "categoria": "Bicicletas",
-  "categoriaId": 1,
-  "titulo": "Bicicleta Nordic",
-  "precio": 19900,
-  "descuento": 0,
-  "detalle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis nulla tellus, rhoncus accumsan odio imperdiet eu. Maecenas at fringilla augue. In hac habitasse platea dictumst. Aenean urna erat, interdum a consequat at, tempor sit amet eros. Etiam faucibus aliquet dui, non condimentum erat sollicitudin at.",
-  "imagen": "img-prod-bici-1667065723912.png",
-  "nuevo": true
- },
- {
   "id": 1667066773612,
   "categoria": "Bicicletas",
   "categoriaId": 1,
@@ -151,13 +140,33 @@
   "nuevo": true
  },
  {
+  "id": 1668258311097,
+  "categoria": "Computadoras",
+  "titulo": "Dell Inspiron 1",
+  "precio": 153331,
+  "descuento": 1,
+  "detalle": "Dell Inspiron, precio 153333 con descuento 3.Producto nuevo. Edit ahora todo en 7, precio 153777  y descuento 7. Producto ahora nuevo y 9. Ahora todo 1",
+  "imagen": "img-prod-1668258311085.png",
+  "nuevo": true
+ },
+ {
   "id": 1668252895829,
   "categoria": "Celulares",
-  "titulo": "Celular Kodak Infantil 77",
-  "precio": 23377,
-  "descuento": 7,
-  "detalle": "El celular Kodak Seren D65LX cuenta con pantalla IPS de 6.53 pulgadas, con notch de gota y resolución HD+ (720 x 1600 píxeles) en el cual disfrutarás de colores intensos y mayor nitidez en todos tus contenidos 77",
+  "titulo": "Celular Kodak Infantil 55",
+  "precio": 23355,
+  "descuento": 5,
+  "detalle": "El celular Kodak Seren D65LX cuenta con pantalla IPS de 6.53 pulgadas, con notch de gota y resolución HD+ (720 x 1600 píxeles) en el cual disfrutarás de colores intensos y mayor nitidez en todos tus contenidos ahora en 3, titulo que termina en 33, precio 23333 y descuendo 3. Ahora es nuevo. 55",
   "imagen": "img-prod-1668252895822.png",
+  "nuevo": false
+ },
+ {
+  "id": 1667066761091,
+  "categoria": "Bicicletas",
+  "titulo": "Bicicleta Nordic 333",
+  "precio": 19333,
+  "descuento": 3,
+  "detalle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis nulla tellus, rhoncus accumsan odio imperdiet eu. Maecenas at fringilla augue. In hac habitasse platea dictumst. Aenean urna erat, interdum a consequat at, tempor sit amet eros. Etiam faucibus aliquet dui, non condimentum erat sollicitudin at 333",
+  "imagen": "img-prod-bici-1667065723912.png",
   "nuevo": false
  }
 ]

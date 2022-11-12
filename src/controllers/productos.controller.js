@@ -141,11 +141,11 @@ const productsController = {
     editar: (req, res) => {
 
         // get the ID of the product being edited
-        let id = req.params.id;
+        // let id = req.params.id;
 
         // store all the existing prod details in an object
         let editable = products.find(product => {
-            return product.id == id;
+            return product.id == req.params.id;
         })
 
         // set an empty string for the image file name
@@ -179,7 +179,7 @@ const productsController = {
 
         // create a new array without the one being edited
         let newProdArray = products.filter( product => {
-            return product.id != id;
+            return product.id != req.params.id;
         });
 
         // push the edited product into newProdArray
@@ -188,7 +188,7 @@ const productsController = {
         // write the new product JSON
         fs.writeFileSync(prodsFilePath, JSON.stringify(newProdArray, null, " "));
 
-        res.redirect(301, "/productos/respuesta");
+        res.redirect("/productos/respuesta");
     },
 
     // peticion GET para mostar y confirmar la baja de un producto
