@@ -9,7 +9,7 @@
 
 ### Implementación del patrón de diseño MVC
 
-A partir del 6 de octubre de 2022 se sigue con el desarrollo del sitio de Mercado Libre implementado el patrón de diseño MVC. El 25 de octubre se comienza a trabajar en la versión CRUD del sistema.
+A partir del 6 de octubre de 2022 se sigue con el desarrollo del sitio de Mercado Libre implementado el patrón de diseño MVC. El 25 de octubre se comienza a trabajar en la versión CRUD del sistema. El 12 de noviembre se finaliza la versión CRUD con temas menores de CSS a resolver.
 
 ### Versión online del sitio
 

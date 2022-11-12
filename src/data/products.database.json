@@ -139,5 +139,25 @@
   "detalle": "Doble cámara y más detalles\r\nSus 2 cámaras traseras de 5 Mpx/0.3 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.\r\n\r\nAdemás, el dispositivo cuenta con cámara frontal de 2 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas 33-33.",
   "imagen": "img-prod-1668198704864.png",
   "nuevo": false
+ },
+ {
+  "id": 1667066912468,
+  "categoria": "Herramientas",
+  "titulo": "Sierra Lineal ",
+  "precio": 8000,
+  "descuento": 8,
+  "detalle": "Donec bibendum metus sed arcu pellentesque commodo. Aenean suscipit nisl diam, eu mollis magna elementum euismod. Suspendisse quam velit, luctus vel urna eu, sollicitudin volutpat metus. Fusce ante mauris, luctus at sem a, interdum vulputate justo. Cras quis eros faucibus velit congue porttitor eget quis sapien. Suspendisse tempus convallis mauris vitae finibus. Aenean aliquet sapien sed mi semper volutpat.",
+  "imagen": "img-prod-herr-1667066094325.png",
+  "nuevo": true
+ },
+ {
+  "id": 1668252895829,
+  "categoria": "Celulares",
+  "titulo": "Celular Kodak Infantil 77",
+  "precio": 23377,
+  "descuento": 7,
+  "detalle": "El celular Kodak Seren D65LX cuenta con pantalla IPS de 6.53 pulgadas, con notch de gota y resolución HD+ (720 x 1600 píxeles) en el cual disfrutarás de colores intensos y mayor nitidez en todos tus contenidos 77",
+  "imagen": "img-prod-1668252895822.png",
+  "nuevo": false
  }
 ]
