@@ -218,8 +218,7 @@ const productsController = {
         // escribir el nuevo array de products sin 
         fs.writeFileSync(prodsFilePath, JSON.stringify(newProducts, null, " "));
 
-        // res.redirect("/productos/respuesta");
-        res.redirect("http://localhost:5001/")
+        res.redirect("/productos/respuesta");
 
     }
 
