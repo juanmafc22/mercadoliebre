@@ -23,32 +23,21 @@
           
     <!-- Aquí va el formulario de registro -->
     <main>
-        <h3 class="titular__registrese">Ingrese su usuario y contraseña</h3>
-
-        <div class="container">
-
-            <form method="POST" action="/users/login" id="form" class="form">
-
-                <div class="form-control">
-                    <label for="username">Direccion de email</label>
-                    <input type="email" id="username" name="email" placeholder="Ingrese su email">
-                    <small>Error en el nombre de usuario</small>
-                </div>
-                <div class="form-control">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
-                    <small>Error en la contraseña</small>
-                </div>
-
-                <div class="submit-buttons">
-                    <input class="boton-accionar" type="submit" value="Ingresar">
-                    <input class="boton-accionar" type="reset" value="Borrar">
-                </div>
-
-            </form>
-
-
+        <div>
+            <h3 class="titular__registrese">ABM de usuarios</h3>
+            <a href="/users/crear"><h3 class="tit-interno-abm-user">Dar de alta un usuario administrador </h3></a>
+            <hr>
+            <h3 class="tit-interno-abm-user">Editar o eliminar usuarios existentes</h3>
+            <% usuarios.forEach (usuario => { %>
+            <p class="parrrafo-usuario">    <%= usuario.nombre %>. ID: <%= usuario.id %> <br>
+                                            Tipo de usuario: <%= usuario.tipo %><br>
+                                            <a href="/users/editar/<%= usuario.id %>">Editar</a> - <a href="/users/eliminar/<%= usuario.id %>">Eliminar</a>
+                                        </p>
+            <% }) %>
         </div>
+
+
+
 
         
     </main>

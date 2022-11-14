@@ -36,7 +36,7 @@ app.set('views', path.join(__dirname, './views')); // Define la ubicación de la
 // ------- | required route system
 app.use("/", mainRouter);
 app.use("/users", usersRouter);
-app.use("/productos/", productsRouter);
+app.use("/productos", productsRouter);
 
 
 // ------- | seteo inicial del error 404 

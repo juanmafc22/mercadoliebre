@@ -1,0 +1,57 @@
+[
+ {
+  "id": 1668360441190,
+  "nombre": "Juan Manuel Fernandez",
+  "email": "juanmanuel@email.com",
+  "password": "12345678",
+  "tipo": "user"
+ },
+ {
+  "id": 1668360585515,
+  "nombre": "Karen Todel",
+  "email": "karen@email.com.ar",
+  "password": "12345678",
+  "tipo": "admin"
+ },
+ {
+  "id": 1668360560664,
+  "nombre": "Nicolas Fernandez Todel",
+  "email": "nico@email.com",
+  "password": "12345678",
+  "tipo": "user"
+ },
+ {
+  "id": 1668360660481,
+  "nombre": "Micaela Fernandez Todel",
+  "email": "mimush@email.com",
+  "password": "12345678",
+  "tipo": "user"
+ },
+ {
+  "id": 1668360712410,
+  "nombre": "Rufi",
+  "email": "rufi@comeojotas.com",
+  "password": "12345678",
+  "tipo": "admin"
+ },
+ {
+  "id": 1668400667448,
+  "nombre": "Hello",
+  "email": "hello@moto.com",
+  "birthday": "2022-11-01",
+  "image": "img-user-1668400667439.png",
+  "password": "111",
+  "password2": "111",
+  "tipo": "admin"
+ },
+ {
+  "id": 1668400790743,
+  "nombre": "Otro usuario mas 99",
+  "email": "mas99@mas99.com",
+  "birthday": "2022-11-11",
+  "image": "img-user-1668400790734.png",
+  "password": "99",
+  "password2": "99",
+  "tipo": "admin"
+ }
+]

@@ -67,7 +67,7 @@
     visibility: visible;
 }
 
-.form button {
+.form .boton-accionar {
     cursor: pointer;
     width: 45%;
     border: solid 1px #1259c3;
@@ -108,6 +108,24 @@
 
 .display-radios {
     display: inline;
+}
+
+hr {
+    width: 50%;
+    color:#666;
+    height: 1px;
+    margin: 28px 0px 28px 17px;
+}
+
+.parrrafo-usuario {
+    margin: 10px 0px 17px 17px;
+}
+
+
+/* Estilos listar-usuarios */
+
+.tit-interno-abm-user {
+	margin: 10px 0px 0px 17px;
 }
 
 @media (min-width: 500px) {
