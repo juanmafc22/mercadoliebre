@@ -35,6 +35,7 @@
 
                 <form id="form" action="/users/editar/<%= editarUsuario.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="form">
 
+                    <input type="hidden" name="tipo" value="admin">
                 
                     <div class="form-control">
                         <label for="fullname">Nombre Completo</label>

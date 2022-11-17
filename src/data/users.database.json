@@ -31,12 +31,11 @@
  },
  {
   "id": 1668630705233,
-  "nombre": "Angel Di Maria",
-  "email": "fideo@central.com",
-  "birthday": "2000-02-14",
+  "nombre": "Angel Di Maria 01",
+  "email": "fideo@central01.com",
+  "birthday": "2000-02-01",
   "image": "img-user-1668630705244.png",
-  "password": "adsfasdfadsf",
-  "password2": "adsfasdfadsf",
+  "password": "01",
   "tipo": "admin"
  }
 ]

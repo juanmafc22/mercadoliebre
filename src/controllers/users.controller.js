@@ -90,12 +90,33 @@ const usersController = {
         // the existeing inmage file name, otherwise the let image name be equal to
         // the one being passed
         if (!req.file) {
-            imagen = editable.imagen;
+            imagen = editable.image;
         } else {
             imagen = req.file.filename;
         }
 
-        console.log("editando", editable);
+        let userEditado = {
+            "id": editable.id,
+            "nombre": req.body.fullname,
+            "email": req.body.email,
+            "birthday": req.body.birthday,
+            "image": imagen,
+            "password": req.body.password,
+            "tipo": req.body.tipo
+        };
+
+        // Crear un nuevo array sin el usuario que se esta editando
+        let newUserArray = usuarios.filter( usuario => {
+            return usuario.id != req.params.id;
+        });
+
+        // agregarle el nuevo usuario editado
+        newUserArray.push(userEditado);
+
+        // escribir el nuevo JSON
+        fs.writeFileSync(usersFilePath, JSON.stringify(newUserArray, null, " "));
+
+        res.redirect("/users/listar-usuarios");
 
 
 
