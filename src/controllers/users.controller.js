@@ -57,6 +57,50 @@ const usersController = {
         // redirect al listado de usuarios
         res.redirect("/users/listar-usuarios");
     },
+
+    // metodo por GET que muestra el formulario de edicion y pobla los campos con la info del JSON
+    editar: (req, res) => {
+
+        // obtener el ID del usuario a editar pasado por req.params
+        let id = req.params.id;
+
+        // obtener la info del usuario a editar
+        let editarUsuario = usuarios.find (usuario => {
+            return usuario.id == id;
+        });
+
+        // enviar la info del usuario a la vista
+        res.render("usuarios/editar-usuario", {editarUsuario});
+
+
+    },
+
+    // metodo que viene por PUT para editar el usuario
+    update: (req,res) => {
+
+        // store all the existing prod details in an object
+        let editable = usuarios.find(usuario => {
+            return usuario.id == req.params.id;
+        })
+
+        // set an empty string for the image file name
+        let imagen = "";
+
+        // if not image is being passed through the route, let the image name equal to 
+        // the existeing inmage file name, otherwise the let image name be equal to
+        // the one being passed
+        if (!req.file) {
+            imagen = editable.imagen;
+        } else {
+            imagen = req.file.filename;
+        }
+
+        console.log("editando", editable);
+
+
+
+
+    },
    
     // metodo por POST que procesa la info enviada de formulario en el .ejs de login
     infoLogin: (req, res) => {
@@ -70,7 +114,7 @@ const usersController = {
 
     register: (req, res) => {
         res.render("usuarios/register");
-    },
+    }
 
 
 };

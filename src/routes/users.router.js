@@ -41,9 +41,14 @@ router.get ("/register", usersController.register);
 // ruta GET para mostar la pagina principal de usuarios
 router.get ("/listar-usuarios", usersController.listar);
 
-
 // ruta GET para acceder al formulario de alta interna de usuario
 router.get("/crear", usersController.crear);
+
+// ruta GET para acceder al formulario de edicion de usuario
+router.get("/editar/:id", usersController.editar);
+
+// ruta PUT para editar el usuario
+router.put("/editar/:id", upload.single("profilePic"), usersController.update);
 
 // ruta POST para crear el usuario
 router.post("/crear", upload.single("profilePic"), usersController.confirmarCrear);

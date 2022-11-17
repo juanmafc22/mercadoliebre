@@ -1,16 +1,5 @@
 [
  {
-  "id": 1667066773612,
-  "categoria": "Bicicletas",
-  "categoriaId": 1,
-  "titulo": "Bicicleta Infantil con rueditas",
-  "precio": 45000,
-  "descuento": 5,
-  "detalle": "Suspendisse eleifend ipsum tortor, ut porta velit eleifend in. Cras congue scelerisque elit sed porta. Sed ullamcorper eu nisi vel mattis. Vestibulum suscipit felis quis ornare aliquam. Nam in quam a velit ullamcorper volutpat. Phasellus sit amet augue eget dolor blandit commodo.",
-  "imagen": "img-prod-bici-1667065814271.png",
-  "nuevo": false
- },
- {
   "id": 1667066810371,
   "categoria": "Bicicletas",
   "categoriaId": 1,
@@ -168,5 +157,15 @@
   "detalle": "El celular Kodak Seren D65LX cuenta con pantalla IPS de 6.53 pulgadas, con notch de gota y resolución HD+ (720 x 1600 píxeles) en el cual disfrutarás de colores intensos y mayor nitidez en todos tus contenidos ahora en 3, titulo que termina en 33, precio 23333 y descuendo 3. Ahora es nuevo. 33",
   "imagen": "img-prod-1668252895822.png",
   "nuevo": true
+ },
+ {
+  "id": 1667066773612,
+  "categoria": "Bicicletas",
+  "titulo": "Bicicleta Infantil con rueditas",
+  "precio": 45000,
+  "descuento": 0,
+  "detalle": "Suspendisse eleifend ipsum tortor, ut porta velit eleifend in. Cras congue scelerisque elit sed porta. Sed ullamcorper eu nisi vel mattis. Vestibulum suscipit felis quis ornare aliquam. Nam in quam a velit ullamcorper volutpat. Phasellus sit amet augue eget dolor blandit commodo.",
+  "imagen": "img-prod-bici-1667065814271.png",
+  "nuevo": false
  }
 ]

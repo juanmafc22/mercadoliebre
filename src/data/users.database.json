@@ -1,42 +1,7 @@
 [
  {
-  "id": 1668360441190,
-  "nombre": "Juan Manuel Fernandez",
-  "email": "juanmanuel@email.com",
-  "password": "12345678",
-  "tipo": "user"
- },
- {
-  "id": 1668360585515,
-  "nombre": "Karen Todel",
-  "email": "karen@email.com.ar",
-  "password": "12345678",
-  "tipo": "admin"
- },
- {
-  "id": 1668360560664,
-  "nombre": "Nicolas Fernandez Todel",
-  "email": "nico@email.com",
-  "password": "12345678",
-  "tipo": "user"
- },
- {
-  "id": 1668360660481,
-  "nombre": "Micaela Fernandez Todel",
-  "email": "mimush@email.com",
-  "password": "12345678",
-  "tipo": "user"
- },
- {
-  "id": 1668360712410,
-  "nombre": "Rufi",
-  "email": "rufi@comeojotas.com",
-  "password": "12345678",
-  "tipo": "admin"
- },
- {
   "id": 1668400667448,
-  "nombre": "Hello",
+  "nombre": "Hello Moto",
   "email": "hello@moto.com",
   "birthday": "2022-11-01",
   "image": "img-user-1668400667439.png",
@@ -56,12 +21,22 @@
  },
  {
   "id": 1668630705252,
-  "nombre": "Serhar Durmus",
+  "nombre": "Serhat Durmus",
   "email": "durmus@trapnation.com",
   "birthday": "2000-02-22",
   "image": "img-user-1668630705244.png",
   "password": "adsfasdfadsf",
   "password2": "durmus",
+  "tipo": "admin"
+ },
+ {
+  "id": 1668630705233,
+  "nombre": "Angel Di Maria",
+  "email": "fideo@central.com",
+  "birthday": "2000-02-14",
+  "image": "img-user-1668630705244.png",
+  "password": "adsfasdfadsf",
+  "password2": "adsfasdfadsf",
   "tipo": "admin"
  }
 ]
