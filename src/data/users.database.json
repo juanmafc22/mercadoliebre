@@ -53,5 +53,15 @@
   "password": "99",
   "password2": "99",
   "tipo": "admin"
+ },
+ {
+  "id": 1668630705252,
+  "nombre": "Serhar Durmus",
+  "email": "durmus@trapnation.com",
+  "birthday": "2000-02-22",
+  "image": "img-user-1668630705244.png",
+  "password": "adsfasdfadsf",
+  "password2": "durmus",
+  "tipo": "admin"
  }
 ]
