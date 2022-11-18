@@ -7,11 +7,13 @@ const usuarios = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const usersController = {
 
+
     // metodo por GET que muestra el .ejs de login
     login: (req, res) => {
 
         res.render("usuarios/login")
     },
+
 
     // metodo por GET que lista los usuadios existentes con links para dar de alta un 
     // usuariio nuevo como asi tambien editar los existentes
@@ -21,12 +23,14 @@ const usersController = {
 
     },
 
+
     // metodo por GET para dar de alta un usuario de forma interna, posibilitando el alta de usuario
     // tipo "user" o "admin", el form de registro solo da de alta usuuarios tipos "user"
     crear: (req, res) => {
 
         res.render("usuarios/alta-admin");
     },
+
 
     confirmarCrear: (req, res) => {
 
@@ -58,6 +62,7 @@ const usersController = {
         res.redirect("/users/listar-usuarios");
     },
 
+
     // metodo por GET que muestra el formulario de edicion y pobla los campos con la info del JSON
     editar: (req, res) => {
 
@@ -74,6 +79,7 @@ const usersController = {
 
 
     },
+
 
     // metodo que viene por PUT para editar el usuario
     update: (req,res) => {
@@ -118,7 +124,42 @@ const usersController = {
 
         res.redirect("/users/listar-usuarios");
 
+    },
 
+    // metodo por GET que muestra la info del usuario a borrar
+    delete: (req, res) => {
+
+        // obtener el id pasado por req.params del usuaro a eliminar
+        let id = req.params.id
+
+        // obetener la info del usuario a borrar
+        let borrarlo = usuarios.find ( usuario => {
+            return usuario.id == id;
+        })
+
+        res.render("usuarios/confirmar-baja", {borrarlo});
+
+    },
+
+    // metodo por DELETE que borra el usuario
+    destroy: (req, res) => {
+
+        // obtener el id pasado por req.params del usuaro a eliminar
+        let id = req.params.id
+
+        // encontrar el usuario a eliminar
+        let usuarioBorrar = usuarios.find( usuario => {
+            return usuario.id == id;
+        });
+
+        let arrayEditado = usuarios.filter( usuario => {
+            return usuario.id != id;
+        });
+
+        // escribir el nuevo JSON
+        fs.writeFileSync(usersFilePath, JSON.stringify(arrayEditado, null, " "));
+
+        res.redirect("/users/listar-usuarios");
 
 
     },

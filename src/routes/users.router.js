@@ -53,8 +53,18 @@ router.put("/editar/:id", upload.single("profilePic"), usersController.update);
 // ruta POST para crear el usuario
 router.post("/crear", upload.single("profilePic"), usersController.confirmarCrear);
 
+
+// ruta GET para acceder a la pagina de confirmacion de delete de usuario
+router.get("/eliminar/:id", usersController.delete);
+
+// ruta DELETE para eliminar el usuario
+router.delete("/destroy/:id", usersController.destroy);
+
 // ruta POST donde se administra la info enviada por POST del formulario de login
 router.post ("/login", usersController.infoLogin);
+
+
+
 
 
 module.exports = router;
