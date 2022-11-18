@@ -161,7 +161,6 @@ const usersController = {
 
         res.redirect("/users/listar-usuarios");
 
-
     },
    
     // metodo por POST que procesa la info enviada de formulario en el .ejs de login
